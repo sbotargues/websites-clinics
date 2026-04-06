@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://websclinicas.com"
   ),
+  verification: {
+    google: "esE0eSX27ZptAbWr1vnoswgcAHXXlHmPXH6OQpBO21M",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
