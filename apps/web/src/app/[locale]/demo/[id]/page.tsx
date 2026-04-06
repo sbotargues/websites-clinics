@@ -90,7 +90,7 @@ export default async function DemoViewer({
           </a>
           <a
             href={`/${locale}#contact`}
-            className="flex items-center gap-1.5 text-sm px-3 py-1.5 md:px-4 md:py-2 rounded-lg bg-violet-600 text-white hover:bg-violet-700 transition-colors font-medium"
+            className="flex items-center gap-1.5 text-xs sm:text-sm whitespace-nowrap px-2.5 py-1.5 md:px-4 md:py-2 rounded-lg bg-violet-600 text-white hover:bg-violet-700 transition-colors font-medium"
           >
             <span>{i18n.toolbar.cta}</span>
           </a>
