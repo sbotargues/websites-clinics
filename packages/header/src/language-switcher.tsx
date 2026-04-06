@@ -63,7 +63,7 @@ export function LanguageSwitcher({ locale, locales }: LanguageSwitcherProps) {
         className="flex items-center gap-1.5 text-sm text-foreground hover:text-primary transition-colors px-2 py-1.5 rounded-lg hover:bg-muted-bg"
       >
         <svg
-          className="w-4 h-4"
+          className="w-5 h-5 sm:w-4 sm:h-4"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

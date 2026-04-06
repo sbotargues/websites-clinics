@@ -25,58 +25,57 @@ export default async function DemoViewer({
   return (
     <div className="h-screen flex flex-col bg-white">
       {/* Preview toolbar */}
-      <div className="flex-shrink-0 border-b border-gray-800 bg-gray-900 px-4 flex items-center justify-between h-12 md:h-14">
-        {/* Left: back */}
-        <div className="flex items-center gap-3">
+      <div className="flex-shrink-0 border-b border-gray-800 bg-gray-900 px-3 sm:px-4 flex items-center justify-between h-12 md:h-14">
+        {/* Left: back to landing */}
+        <div className="flex items-center">
           <a
             href={`/${locale}#demos`}
-            className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 text-sm"
+            className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 text-sm px-2 py-1.5 rounded-lg hover:bg-gray-800"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
-            <span className="hidden sm:inline">{i18n.toolbar.back}</span>
+            <span>{i18n.toolbar.back}</span>
           </a>
         </div>
 
-        {/* Center: demo navigation */}
-        <div className="flex items-center gap-1 sm:gap-2">
+        {/* Center: demo navigation with clear arrows */}
+        <div className="flex items-center gap-0.5 sm:gap-2">
           {prevId ? (
             <a
               href={`/${locale}/demo/${prevId}`}
-              className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors px-2 py-1 rounded-lg hover:bg-gray-800"
+              className="flex items-center justify-center w-8 h-8 text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-gray-800"
+              title={i18n.demoLabels[String(prevId)]}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
-              <span className="hidden sm:inline">{i18n.demoLabels[String(prevId)]}</span>
             </a>
           ) : (
-            <span className="w-8 sm:w-20" />
+            <span className="w-8" />
           )}
 
-          <span className="text-sm font-medium text-gray-200 px-2 sm:px-3 whitespace-nowrap">
-            <span className="sm:hidden">{i18n.toolbar.demo} {numId}/{TOTAL_DEMOS}</span>
-            <span className="hidden sm:inline">{i18n.toolbar.viewingDemo} {numId}/{TOTAL_DEMOS}</span>
+          <span className="text-sm font-medium text-gray-200 px-1 sm:px-3 whitespace-nowrap tabular-nums">
+            {numId}/{TOTAL_DEMOS}
           </span>
 
           {nextId ? (
             <a
               href={`/${locale}/demo/${nextId}`}
-              className="flex items-center gap-1 text-sm text-gray-400 hover:text-white transition-colors px-2 py-1 rounded-lg hover:bg-gray-800"
+              className="flex items-center justify-center w-8 h-8 text-gray-400 hover:text-white transition-colors rounded-lg hover:bg-gray-800"
+              title={i18n.demoLabels[String(nextId)]}
             >
-              <span className="hidden sm:inline">{i18n.demoLabels[String(nextId)]}</span>
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </a>
           ) : (
-            <span className="w-8 sm:w-20" />
+            <span className="w-8" />
           )}
         </div>
 
         {/* Right: CTA buttons */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <a
             href="https://wa.me/34600000000"
             target="_blank"

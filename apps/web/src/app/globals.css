@@ -107,6 +107,14 @@ body {
   background: #F5F5F4;
 }
 
+/* Features: start content higher on mobile */
+@media (max-width: 767px) {
+  .section-parallax-sticky {
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+}
+
 /* Demos section: disable sticky parallax on mobile (cards too tall) */
 @media (max-width: 767px) {
   .section-parallax-sticky--fluid {
