@@ -18,12 +18,12 @@ interface CTASectionProps {
 
 export function CTASection({ t, locale }: CTASectionProps) {
   return (
-    <section className="w-full py-16 sm:py-24 px-4 sm:px-6">
+    <section className="w-full py-10 sm:py-24 px-4 sm:px-6">
       <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-3">
+        <h2 className="text-2xl sm:text-4xl font-heading font-bold text-foreground mb-2 sm:mb-3">
           {t.cta.title}
         </h2>
-        <p className="text-muted leading-relaxed mb-8">
+        <p className="text-sm sm:text-base text-muted leading-relaxed mb-6 sm:mb-8">
           {t.cta.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -56,7 +56,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
         </div>
 
         {/* Divider */}
-        <div className="flex items-center gap-4 my-10">
+        <div className="flex items-center gap-3 sm:gap-4 my-6 sm:my-10">
           <div className="flex-1 h-px bg-border" />
           <span className="text-sm text-muted">{t.cta.formLabel}</span>
           <div className="flex-1 h-px bg-border" />
@@ -66,7 +66,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
         <form
           action="https://formsubmit.co/sbotargues@gmail.com"
           method="POST"
-          className="space-y-3 text-left"
+          className="space-y-2.5 sm:space-y-3 text-left"
         >
           <Input
             id="email"

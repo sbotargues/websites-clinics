@@ -14,6 +14,7 @@ export function DemosAnimations() {
     const animateTargets = root.querySelectorAll<HTMLElement>("[data-animate]");
     const svgs = root.querySelectorAll<SVGSVGElement>("svg[data-draw]");
     const btns = root.querySelectorAll<HTMLAnchorElement>("a[data-demo-btn]");
+    const drawDuration = 1.5;
 
     gsap.set(animateTargets, { autoAlpha: 0 });
 
@@ -67,11 +68,11 @@ export function DemosAnimations() {
 
       els.forEach((el, i) => {
         if (el.getAttribute("fill") === "currentColor" && !el.getAttribute("stroke")) {
-          tl.to(el, { opacity: 1, duration: 0.3 }, i * 0.15);
+          tl.to(el, { opacity: 1, duration: 0.2 }, i * 0.08);
         } else {
           const len = (el as unknown as SVGGeometryElement).getTotalLength?.();
           if (len) {
-            tl.to(el, { strokeDashoffset: 0, duration: 2.5, ease: "power1.inOut" }, i * 0.12);
+            tl.to(el, { strokeDashoffset: 0, duration: drawDuration, ease: "power1.out" }, i * 0.07);
           }
         }
       });

@@ -59,28 +59,31 @@ export function Header({ locale, locales, t }: HeaderProps) {
             <LanguageSwitcher locale={locale} locales={locales} />
           </div>
 
-          {/* Morphing hamburger / X — always rendered, animates between states */}
-          <button
-            className="md:hidden relative z-[101] w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
-            onClick={toggle}
-            aria-label={open ? t.nav.ariaClose : t.nav.ariaOpen}
-          >
-            <span
-              className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 ease-[cubic-bezier(0.77,0,0.18,1)] origin-center ${
-                open ? "translate-y-[7px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-200 ${
-                open ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"
-              }`}
-            />
-            <span
-              className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 ease-[cubic-bezier(0.77,0,0.18,1)] origin-center ${
-                open ? "-translate-y-[7px] -rotate-45" : ""
-              }`}
-            />
-          </button>
+          {/* Mobile actions: language switcher + hamburger */}
+          <div className="md:hidden relative z-[101] flex items-center gap-2">
+            <LanguageSwitcher locale={locale} locales={locales} />
+            <button
+              className="w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
+              onClick={toggle}
+              aria-label={open ? t.nav.ariaClose : t.nav.ariaOpen}
+            >
+              <span
+                className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 ease-[cubic-bezier(0.77,0,0.18,1)] origin-center ${
+                  open ? "translate-y-[7px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-200 ${
+                  open ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"
+                }`}
+              />
+              <span
+                className={`block h-[2px] w-6 bg-foreground rounded-full transition-all duration-300 ease-[cubic-bezier(0.77,0,0.18,1)] origin-center ${
+                  open ? "-translate-y-[7px] -rotate-45" : ""
+                }`}
+              />
+            </button>
+          </div>
         </nav>
       </header>
 
@@ -148,9 +151,6 @@ export function Header({ locale, locales, t }: HeaderProps) {
             <a href="#contact" onClick={close}>
               <Button variant="secondary" size="lg" className="w-full rounded-full text-sm">{t.nav.contact}</Button>
             </a>
-            <div className="flex justify-center pt-2">
-              <LanguageSwitcher locale={locale} locales={locales} />
-            </div>
           </div>
         </div>
       </div>
