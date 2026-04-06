@@ -34,6 +34,7 @@ export function FloatingButtons({ t }: FloatingButtonsProps) {
         rel="noopener noreferrer"
         onClick={close}
         aria-label={t.floatingButtons.whatsappAria}
+        data-track="whatsapp_click" data-track-location="floating"
         className={`absolute bottom-0 right-0 ${ball} bg-[#25D366] text-white ${
           open ? "-translate-x-[3.75rem] -translate-y-[0.25rem] scale-100 opacity-100" : hidden
         }`}
@@ -48,6 +49,7 @@ export function FloatingButtons({ t }: FloatingButtonsProps) {
         rel="noopener noreferrer"
         onClick={close}
         aria-label={t.floatingButtons.reserveAria}
+        data-track="calendly_click" data-track-location="floating"
         className={`absolute bottom-0 right-0 ${ball} bg-foreground text-white ${
           open ? "-translate-x-[0.25rem] -translate-y-[3.75rem] scale-100 opacity-100" : hidden
         }`}
@@ -61,6 +63,7 @@ export function FloatingButtons({ t }: FloatingButtonsProps) {
         href="#contact"
         onClick={close}
         aria-label={t.floatingButtons.contactAria}
+        data-track="cta_click" data-track-cta="contactar" data-track-location="floating"
         className={`absolute bottom-0 right-0 ${ball} bg-amber-500 text-white ${
           open ? "-translate-x-[2.6rem] -translate-y-[2.6rem] scale-100 opacity-100" : hidden
         }`}
@@ -73,6 +76,7 @@ export function FloatingButtons({ t }: FloatingButtonsProps) {
       <button
         onClick={toggle}
         aria-label={open ? t.floatingButtons.toggleClose : t.floatingButtons.toggleOpen}
+        data-track="floating_menu_toggle"
         className="relative w-9 h-9 rounded-full bg-foreground/90 text-white flex items-center justify-center shadow-md hover:bg-foreground active:scale-90 transition-all duration-200"
       >
         <svg

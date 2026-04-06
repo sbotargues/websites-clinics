@@ -226,10 +226,10 @@ export function HeroSection({ t, locale }: HeroProps) {
           {t.hero.subtitle}
         </p>
         <div data-hero-buttons className="flex flex-col sm:flex-row gap-4 sm:justify-center opacity-0">
-          <a href="#demos" className="w-full sm:w-auto">
+          <a href="#demos" className="w-full sm:w-auto" data-track="cta_click" data-track-cta="ver_ejemplos" data-track-location="hero">
             <Button size="lg" className="w-full sm:w-auto rounded-full">{t.hero.cta}</Button>
           </a>
-          <a href="#contact" className="w-full sm:w-auto">
+          <a href="#contact" className="w-full sm:w-auto" data-track="cta_click" data-track-cta="contactar" data-track-location="hero">
             <Button variant="secondary" size="lg" className="w-full sm:w-auto rounded-full">{t.hero.ctaSecondary}</Button>
           </a>
         </div>

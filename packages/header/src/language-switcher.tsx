@@ -91,6 +91,10 @@ export function LanguageSwitcher({ locale, locales }: LanguageSwitcherProps) {
                 onClick={() => {
                   setLocaleCookie(loc);
                   close();
+                  if (typeof window !== "undefined") {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({ event: "language_switch", language: loc });
+                  }
                 }}
                 className={`flex items-center gap-2.5 px-3 py-2 text-sm transition-colors ${
                   loc === locale

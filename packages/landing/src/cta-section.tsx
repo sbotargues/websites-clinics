@@ -32,6 +32,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
+            data-track="calendly_click" data-track-location="cta_section"
           >
             <Button size="lg" className="w-full sm:w-auto gap-2 rounded-full">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -45,6 +46,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
+            data-track="whatsapp_click" data-track-location="cta_section"
           >
             <Button variant="secondary" size="lg" className="w-full sm:w-auto gap-2 rounded-full">
               <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
@@ -89,7 +91,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
               required
             />
           </div>
-          <Button type="submit" size="lg" className="w-full rounded-full">
+          <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section">
             {t.cta.send}
           </Button>
         </form>

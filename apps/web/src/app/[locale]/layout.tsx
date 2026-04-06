@@ -6,6 +6,7 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { getLegalCopy } from "./legal-content";
 import { CookieConsent } from "./_components/cookie-consent";
+import { TrackingListener } from "./_components/tracking-listener";
 
 // Pre-import all messages
 import esMessages from "@/messages/es.json";
@@ -91,6 +92,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={allMessages[locale]}>
       {children}
       <CookieConsent locale={locale} copy={legal.banner} />
+      <TrackingListener />
     </NextIntlClientProvider>
   );
 }
