@@ -183,7 +183,7 @@ export function HeroSection({ t, locale }: HeroProps) {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden min-h-0 md:min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-start pt-24 md:pt-0 md:justify-center px-4 sm:px-6">
+    <section ref={sectionRef} className="relative overflow-hidden min-h-0 md:min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-start pt-20 md:pt-0 md:justify-center px-4 sm:px-6">
       {/* Subtle glow — parallax */}
       <div data-parallax="0.15" className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
