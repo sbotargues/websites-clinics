@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Esempi",
+    "features": "Vantaggi",
+    "faq": "Domande",
+    "contact": "Contatto",
+    "reserve": "Prenota",
+    "ariaOpen": "Apri menu",
+    "ariaClose": "Chiudi menu",
+    "whatsappMessage": "Ciao, vorrei informazioni sui siti web per cliniche dentali"
+  },
+  "hero": {
+    "badge": "Web Design per Studi Dentistici",
+    "titlePre": "Il tuo",
+    "titleHighlight": "studio",
+    "titlePost": "merita un sito che porti pazienti",
+    "subtitle": "Siti moderni, veloci e ottimizzati per la SEO. Più visibilità su Google, più chiamate, più appuntamenti.",
+    "cta": "Vedi gli Esempi",
+    "ctaSecondary": "Contattaci",
+    "floatingCards": [
+      "Più pazienti",
+      "Aperto 24/7",
+      "Caricamento istantaneo",
+      "Visibile all'IA",
+      "Prenotazioni online",
+      "Nº1 su Google"
+    ]
+  },
+  "demos": {
+    "title": "3 tipi di sito per il tuo studio",
+    "subtitle": "Scegli quello che fa per te. Tutti sono personalizzati, perfetti su mobile e ti posizionano su Google.",
+    "items": [
+      {
+        "title": "Pagina unica",
+        "desc": "Tutto in una pagina: i tuoi servizi, dove sei, orari e un modulo di contatto. Veloce, diretto e pronto ad attrarre pazienti.",
+        "link": "Vedi demo"
+      },
+      {
+        "title": "Più pagine",
+        "desc": "Una pagina dedicata per ogni cosa: servizi, team, recensioni pazienti, galleria foto e blog. Per studi che vogliono trasmettere fiducia.",
+        "link": "Vedi demo"
+      },
+      {
+        "title": "Sito con prenotazione online",
+        "desc": "Tutto quanto sopra più un sistema per prenotare appuntamenti dal telefono, a qualsiasi ora, senza chiamare.",
+        "link": "Vedi demo"
+      }
+    ]
+  },
+  "features": {
+    "title": "Cosa ottieni con il tuo nuovo sito?",
+    "subtitle": "Meno tempo a cercare pazienti. Più tempo per fare quello che sai fare meglio.",
+    "items": [
+      {
+        "title": "I pazienti ti trovano su Google",
+        "desc": "Quando qualcuno cerca 'dentista vicino a me', il tuo studio appare. Così semplice. Senza pagare pubblicità, senza complicazioni."
+      },
+      {
+        "title": "Più chiamate, più appuntamenti",
+        "desc": "Pulsante di chiamata sempre visibile, modulo semplice e WhatsApp diretto. I pazienti ti contattano in 2 tap dal telefono."
+      },
+      {
+        "title": "Prenotazione online 24 ore su 24",
+        "desc": "I tuoi pazienti prenotano alle 23 di domenica dal divano. Nessuno deve rispondere al telefono. Tu vedi solo un'agenda piena al mattino."
+      },
+      {
+        "title": "Un'immagine che colpisce",
+        "desc": "I pazienti decidono in 3 secondi se fidarsi del tuo studio. Un sito professionale e curato li convince a prenotare."
+      },
+      {
+        "title": "Pronto in una settimana",
+        "desc": "Niente mesi di attesa. Dicci cosa ti serve, ci occupiamo di tutto e in 7 giorni il tuo sito è online."
+      },
+      {
+        "title": "Non tocchi niente di tecnico",
+        "desc": "Niente hosting, domini o aggiornamenti. Ci pensiamo noi. Vuoi cambiare qualcosa? Mandaci un WhatsApp."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vuoi un sito che porti pazienti?",
+    "subtitle": "Prenota una chiamata di 15 minuti o scrivici su WhatsApp. Ti inviamo una proposta in 24h.",
+    "button": "Richiedi una Proposta Gratuita",
+    "whatsapp": "Scrivici su WhatsApp",
+    "formLabel": "oppure inviaci un'email",
+    "email": "La tua email",
+    "message": "Messaggio",
+    "send": "Invia"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Tutto quello che devi sapere prima di fare il passo.",
+    "items": [
+      {
+        "question": "Cos'è la SEO e perché ne ha bisogno il mio studio?",
+        "answer": "La SEO (Search Engine Optimization) è l'insieme di tecniche per far apparire il tuo sito nei primi risultati di Google. Per uno studio dentistico, significa che quando qualcuno cerca 'dentista nella tua zona', trova te e non la concorrenza."
+      },
+      {
+        "question": "Cos'è il GEO e come si differenzia dalla SEO?",
+        "answer": "Il GEO (Generative Engine Optimization) è l'ottimizzazione per i nuovi motori di ricerca basati sull'IA come Google AI Overview, ChatGPT o Perplexity. Il GEO fa sì che l'IA raccomandi il tuo studio."
+      },
+      {
+        "question": "Cos'è Google Business Profile?",
+        "answer": "È la scheda gratuita di Google che appare su Maps e nei risultati locali. È la prima cosa che un paziente vede: indirizzo, orari, foto, recensioni e telefono."
+      },
+      {
+        "question": "Cosa sono i Core Web Vitals?",
+        "answer": "Sono le metriche che Google usa per misurare l'esperienza del tuo sito: velocità di caricamento, stabilità visiva e tempo di risposta. I nostri siti hanno tutti gli indicatori in verde."
+      },
+      {
+        "question": "Cos'è il design mobile-first?",
+        "answer": "Significa che progettiamo il tuo sito pensando prima al cellulare e poi lo adattiamo agli schermi più grandi. Il 72% dei pazienti cerca un dentista dal telefono."
+      },
+      {
+        "question": "Devo fornire contenuti o foto?",
+        "answer": "Ci adattiamo. Se hai foto professionali, le usiamo. Altrimenti lavoriamo con immagini stock di alta qualità. Il contenuto lo scriviamo noi."
+      },
+      {
+        "question": "Posso aggiornare il sito da solo?",
+        "answer": "Sì. Ti diamo accesso a un pannello dove puoi modificare testi, foto e orari senza toccare il codice. Per cambiamenti più grandi, siamo a un WhatsApp di distanza."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "cookies": "Cookie"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Prenota appuntamento",
+    "contactAria": "Modulo di contatto",
+    "toggleOpen": "Contattaci",
+    "toggleClose": "Chiudi"
+  },
+  "brand": {
+    "logoLine1": "siti web",
+    "logoLine2": "per cliniche"
+  },
+  "metadata": {
+    "title": "Siti Web per Cliniche — Design web professionale per dentisti",
+    "titleTemplate": "%s | Siti Web per Cliniche",
+    "description": "Progettiamo siti moderni, veloci e ottimizzati per Google. Più pazienti, più appuntamenti per la tua clinica dentale."
+  }
+}

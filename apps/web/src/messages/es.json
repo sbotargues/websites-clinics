@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "demos": "Ejemplos",
+    "features": "Ventajas",
+    "faq": "Dudas",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "reserve": "Reservar",
+    "ariaOpen": "Abrir menú",
+    "ariaClose": "Cerrar menú",
+    "whatsappMessage": "Hola, quiero info sobre webs para clínicas"
+  },
+  "hero": {
+    "badge": "Diseño Web para Clínicas Dentales",
+    "titlePre": "Tu",
+    "titleHighlight": "clínica",
+    "titlePost": "merece una web que traiga pacientes",
+    "subtitle": "Webs modernas, rápidas y optimizadas para SEO. Más visibilidad en Google, más llamadas, más citas.",
+    "cta": "Ver Ejemplos",
+    "ctaSecondary": "Contáctanos",
+    "floatingCards": [
+      "Más pacientes",
+      "Abierta 24/7",
+      "Carga al instante",
+      "Visible en IA",
+      "Citas online",
+      "Nº1 en Google"
+    ]
+  },
+  "demos": {
+    "title": "3 tipos de web para tu clínica",
+    "subtitle": "Elige la que mejor encaje. Todas son personalizadas, se ven perfectas en el móvil y te posicionan en Google.",
+    "items": [
+      {
+        "title": "Página única",
+        "desc": "Todo en una sola página: tus servicios, dónde estás, horarios y un formulario para que te escriban. Rápida, directa y lista para atraer pacientes.",
+        "link": "Ver demo"
+      },
+      {
+        "title": "Varias páginas",
+        "desc": "Una página para cada cosa: servicios, equipo, opiniones de pacientes, galería de fotos y blog. Para clínicas que quieren transmitir confianza.",
+        "link": "Ver demo"
+      },
+      {
+        "title": "Web con citas online",
+        "desc": "Todo lo anterior más un sistema para que tus pacientes reserven cita desde el móvil, a cualquier hora, sin necesidad de llamar.",
+        "link": "Ver demo"
+      }
+    ]
+  },
+  "features": {
+    "title": "¿Qué consigues con tu nueva web?",
+    "subtitle": "Menos tiempo persiguiendo pacientes. Más tiempo haciendo lo que sabes hacer.",
+    "items": [
+      {
+        "title": "Que te encuentren en Google",
+        "desc": "Cuando alguien busca 'dentista cerca de mí', tu clínica aparece. Así de simple. Sin pagar anuncios, sin complicaciones. Tú solo recibes la llamada."
+      },
+      {
+        "title": "Más llamadas, más citas",
+        "desc": "Botón de llamar siempre visible, formulario fácil y WhatsApp directo. El paciente te contacta en 2 toques desde el móvil, sin buscar tu número."
+      },
+      {
+        "title": "Citas online las 24h",
+        "desc": "Tus pacientes reservan cita a las 11 de la noche, un domingo, desde el sofá. Sin que nadie descuelgue el teléfono. Tú solo ves la agenda llena al llegar."
+      },
+      {
+        "title": "Una imagen que impone",
+        "desc": "Los pacientes deciden en 3 segundos si confían en tu clínica. Una web profesional y cuidada hace que quieran pedir cita antes de pisar la consulta."
+      },
+      {
+        "title": "Lista en una semana",
+        "desc": "Nada de meses esperando. Nos cuentas qué necesitas, nosotros nos encargamos de todo y en 7 días tu web está online y funcionando."
+      },
+      {
+        "title": "Tú no tocas nada técnico",
+        "desc": "Ni hosting, ni dominios, ni actualizaciones. Nos encargamos de todo. Si quieres cambiar algo, nos escribes por WhatsApp y lo hacemos nosotros."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Quieres una web que traiga pacientes?",
+    "subtitle": "Reserva una llamada de 15 minutos o escríbenos por WhatsApp. Te enviamos propuesta en 24h.",
+    "button": "Pedir Propuesta Gratis",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "formLabel": "o envíanos un email",
+    "email": "Tu email",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitas saber antes de dar el paso.",
+    "items": [
+      {
+        "question": "¿Qué es el SEO y por qué lo necesita mi clínica?",
+        "answer": "SEO (Search Engine Optimization) es el conjunto de técnicas para que tu web aparezca en los primeros resultados de Google. Para una clínica dental, esto significa que cuando alguien busque 'dentista en tu barrio', te encuentre a ti y no a la competencia. Sin SEO, tu web es invisible."
+      },
+      {
+        "question": "¿Qué es el GEO y en qué se diferencia del SEO?",
+        "answer": "GEO (Generative Engine Optimization) es la optimización para los nuevos buscadores con inteligencia artificial como Google AI Overview, ChatGPT o Perplexity. Mientras el SEO posiciona en los resultados clásicos de Google, el GEO hace que la IA recomiende tu clínica cuando un paciente le pregunte '¿cuál es el mejor dentista cerca de mí?'."
+      },
+      {
+        "question": "¿Qué es Google Business Profile y para qué sirve?",
+        "answer": "Es la ficha gratuita de Google que aparece en Maps y en los resultados locales. Es lo primero que ve un paciente: tu dirección, horario, fotos, reseñas y teléfono. Tenerla bien optimizada significa más llamadas y más visitas directas a tu clínica."
+      },
+      {
+        "question": "¿Qué son los Core Web Vitals?",
+        "answer": "Son las métricas que usa Google para medir la experiencia de tu web: velocidad de carga, estabilidad visual y tiempo de respuesta. Si tu web es lenta o se mueve al cargar, Google te penaliza y los pacientes se van. Nuestras webs tienen todos los indicadores en verde."
+      },
+      {
+        "question": "¿Qué es el diseño mobile-first?",
+        "answer": "Significa que diseñamos tu web pensando primero en el móvil y después la adaptamos a pantallas más grandes. El 72% de los pacientes buscan dentista desde el teléfono, así que si tu web no se ve perfecta en el móvil, estás perdiendo pacientes."
+      },
+      {
+        "question": "¿Necesito dar contenido o fotos para la web?",
+        "answer": "Nos adaptamos. Si tienes fotos profesionales de tu clínica, las usamos. Si no, trabajamos con bancos de imagen de alta calidad y podemos organizar una sesión fotográfica como servicio adicional. El contenido lo redactamos nosotros basándonos en un brief contigo."
+      },
+      {
+        "question": "¿Puedo actualizar la web yo mismo después?",
+        "answer": "Sí. Te damos acceso a un panel donde puedes cambiar textos, fotos y horarios sin tocar código. Y si necesitas cambios más grandes, estamos a un WhatsApp de distancia."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Planes para tu clínica",
+    "subtitle": "Empieza con una web que trae pacientes y escala cuando quieras.",
+    "perMonth": "pago único",
+    "features": "Incluye",
+    "cta": "Empezar ahora",
+    "popular": "Más elegido"
+  },
+  "login": {
+    "title": "Accede a tu panel",
+    "email": "Email",
+    "password": "Contraseña",
+    "submit": "Entrar",
+    "noAccount": "¿No tienes cuenta?",
+    "register": "Regístrate"
+  },
+  "register": {
+    "title": "Crea tu cuenta",
+    "name": "Nombre",
+    "email": "Email",
+    "password": "Contraseña",
+    "submit": "Crear cuenta",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "login": "Inicia sesión"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subscription": "Suscripción",
+    "licenses": "Licencias",
+    "noLicenses": "Aún no tienes licencias activas.",
+    "plan": "Plan",
+    "status": "Estado",
+    "key": "Clave",
+    "account": "Cuenta",
+    "bot": "Bot",
+    "expires": "Caduca",
+    "manageBilling": "Gestionar facturación",
+    "navDashboard": "Dashboard",
+    "navSettings": "Ajustes",
+    "navLogout": "Salir"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Reservar cita",
+    "contactAria": "Formulario de contacto",
+    "toggleOpen": "Contactar",
+    "toggleClose": "Cerrar contacto"
+  },
+  "brand": {
+    "logoLine1": "webs",
+    "logoLine2": "para clínicas"
+  },
+  "metadata": {
+    "title": "Webs para Clínicas — Diseño web profesional para dentistas",
+    "titleTemplate": "%s | Webs para Clínicas",
+    "description": "Diseñamos webs modernas, rápidas y optimizadas para Google. Más pacientes, más citas para tu clínica dental."
+  }
+}

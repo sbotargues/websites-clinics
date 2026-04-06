@@ -1,0 +1,57 @@
+import type { MetadataRoute } from "next";
+import { siteUrl } from "@/seo";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: [
+          "/login",
+          "/register",
+          "/dashboard",
+          "/demo/*",
+          "/en/login",
+          "/en/register",
+          "/en/dashboard",
+          "/en/demo/*",
+          "/fr/login",
+          "/fr/register",
+          "/fr/dashboard",
+          "/fr/demo/*",
+          "/de/login",
+          "/de/register",
+          "/de/dashboard",
+          "/de/demo/*",
+          "/it/login",
+          "/it/register",
+          "/it/dashboard",
+          "/it/demo/*",
+          "/pt/login",
+          "/pt/register",
+          "/pt/dashboard",
+          "/pt/demo/*",
+          "/ca/login",
+          "/ca/register",
+          "/ca/dashboard",
+          "/ca/demo/*",
+          "/ru/login",
+          "/ru/register",
+          "/ru/dashboard",
+          "/ru/demo/*",
+          "/nl/login",
+          "/nl/register",
+          "/nl/dashboard",
+          "/nl/demo/*",
+          "/ka/login",
+          "/ka/register",
+          "/ka/dashboard",
+          "/ka/demo/*",
+        ],
+      },
+    ],
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
+  };
+}

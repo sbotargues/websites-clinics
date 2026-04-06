@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Beispiele",
+    "features": "Vorteile",
+    "faq": "Fragen",
+    "contact": "Kontakt",
+    "reserve": "Buchen",
+    "ariaOpen": "Menü öffnen",
+    "ariaClose": "Menü schließen",
+    "whatsappMessage": "Hallo, ich hätte gerne Infos über Websites für Zahnarztpraxen"
+  },
+  "hero": {
+    "badge": "Webdesign für Zahnarztpraxen",
+    "titlePre": "Ihre",
+    "titleHighlight": "Praxis",
+    "titlePost": "verdient eine Website, die Patienten bringt",
+    "subtitle": "Moderne, schnelle und SEO-optimierte Websites. Mehr Google-Sichtbarkeit, mehr Anrufe, mehr Termine.",
+    "cta": "Beispiele ansehen",
+    "ctaSecondary": "Kontaktieren Sie uns",
+    "floatingCards": [
+      "Mehr Patienten",
+      "Rund um die Uhr",
+      "Blitzschnell",
+      "Sichtbar für KI",
+      "Online-Termine",
+      "Nr. 1 bei Google"
+    ]
+  },
+  "demos": {
+    "title": "3 Website-Typen für Ihre Praxis",
+    "subtitle": "Wählen Sie die passende. Alle sind individuell gestaltet, perfekt auf dem Handy und bringen Sie bei Google nach vorne.",
+    "items": [
+      {
+        "title": "Einzelne Seite",
+        "desc": "Alles auf einer Seite: Ihre Leistungen, Standort, Öffnungszeiten und ein Kontaktformular. Schnell, direkt und bereit, Patienten anzuziehen.",
+        "link": "Demo ansehen"
+      },
+      {
+        "title": "Mehrere Seiten",
+        "desc": "Eine eigene Seite für jedes Thema: Leistungen, Team, Patientenbewertungen, Fotogalerie und Blog. Für Praxen, die Vertrauen aufbauen wollen.",
+        "link": "Demo ansehen"
+      },
+      {
+        "title": "Website mit Online-Buchung",
+        "desc": "Alles oben Genannte plus ein System, damit Ihre Patienten jederzeit vom Handy aus Termine buchen können, ohne anzurufen.",
+        "link": "Demo ansehen"
+      }
+    ]
+  },
+  "features": {
+    "title": "Was bringt Ihnen Ihre neue Website?",
+    "subtitle": "Weniger Zeit mit der Patientensuche. Mehr Zeit für das, was Sie am besten können.",
+    "items": [
+      {
+        "title": "Patienten finden Sie bei Google",
+        "desc": "Wenn jemand 'Zahnarzt in meiner Nähe' sucht, erscheint Ihre Praxis. So einfach. Ohne Werbung zu bezahlen, ohne Komplikationen."
+      },
+      {
+        "title": "Mehr Anrufe, mehr Termine",
+        "desc": "Anruf-Button immer sichtbar, einfaches Formular und direktes WhatsApp. Patienten kontaktieren Sie mit 2 Klicks vom Handy."
+      },
+      {
+        "title": "Online-Buchung rund um die Uhr",
+        "desc": "Ihre Patienten buchen Termine um 23 Uhr am Sonntag vom Sofa aus. Niemand muss ans Telefon. Sie sehen morgens einfach einen vollen Kalender."
+      },
+      {
+        "title": "Ein Auftritt, der beeindruckt",
+        "desc": "Patienten entscheiden in 3 Sekunden, ob sie Ihrer Praxis vertrauen. Eine professionelle Website bringt sie dazu, einen Termin zu buchen."
+      },
+      {
+        "title": "In einer Woche fertig",
+        "desc": "Kein monatelanges Warten. Sagen Sie uns, was Sie brauchen, wir kümmern uns um alles und in 7 Tagen ist Ihre Website online."
+      },
+      {
+        "title": "Kein Technik-Stress für Sie",
+        "desc": "Kein Hosting, keine Domains, keine Updates. Wir kümmern uns um alles. Änderungswunsch? Einfach per WhatsApp schreiben."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Möchten Sie eine Website, die Patienten bringt?",
+    "subtitle": "Buchen Sie ein 15-Minuten-Gespräch oder schreiben Sie uns auf WhatsApp. Wir senden Ihnen ein Angebot in 24h.",
+    "button": "Kostenloses Angebot anfordern",
+    "whatsapp": "Schreiben Sie uns auf WhatsApp",
+    "formLabel": "oder senden Sie uns eine E-Mail",
+    "email": "Ihre E-Mail",
+    "message": "Nachricht",
+    "send": "Senden"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie wissen müssen, bevor Sie den nächsten Schritt machen.",
+    "items": [
+      {
+        "question": "Was ist SEO und warum braucht meine Praxis das?",
+        "answer": "SEO (Search Engine Optimization) sind die Techniken, damit Ihre Website in den ersten Google-Ergebnissen erscheint. Für eine Zahnarztpraxis bedeutet das: Wenn jemand 'Zahnarzt in Ihrer Gegend' sucht, findet er Sie und nicht die Konkurrenz."
+      },
+      {
+        "question": "Was ist GEO und wie unterscheidet es sich von SEO?",
+        "answer": "GEO (Generative Engine Optimization) ist die Optimierung für neue KI-gestützte Suchmaschinen wie Google AI Overview, ChatGPT oder Perplexity. GEO sorgt dafür, dass die KI Ihre Praxis empfiehlt."
+      },
+      {
+        "question": "Was ist das Google Business Profile?",
+        "answer": "Es ist der kostenlose Google-Eintrag, der in Maps und lokalen Ergebnissen erscheint. Das Erste, was ein Patient sieht: Ihre Adresse, Öffnungszeiten, Fotos, Bewertungen und Telefonnummer."
+      },
+      {
+        "question": "Was sind Core Web Vitals?",
+        "answer": "Das sind die Metriken, die Google verwendet, um die Nutzererfahrung Ihrer Website zu messen: Ladegeschwindigkeit, visuelle Stabilität und Reaktionszeit. Unsere Websites haben alle Indikatoren im grünen Bereich."
+      },
+      {
+        "question": "Was bedeutet Mobile-First-Design?",
+        "answer": "Wir gestalten Ihre Website zuerst für das Handy und passen sie dann an größere Bildschirme an. 72% der Patienten suchen einen Zahnarzt über ihr Telefon."
+      },
+      {
+        "question": "Muss ich Inhalte oder Fotos liefern?",
+        "answer": "Wir passen uns an. Wenn Sie professionelle Fotos haben, nutzen wir sie. Wenn nicht, arbeiten wir mit hochwertigen Stockbildern. Den Inhalt schreiben wir."
+      },
+      {
+        "question": "Kann ich die Website danach selbst aktualisieren?",
+        "answer": "Ja. Wir geben Ihnen Zugang zu einem Panel, in dem Sie Texte, Fotos und Öffnungszeiten ohne Code ändern können. Für größere Änderungen sind wir eine WhatsApp-Nachricht entfernt."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Termin buchen",
+    "contactAria": "Kontaktformular",
+    "toggleOpen": "Kontakt",
+    "toggleClose": "Schließen"
+  },
+  "brand": {
+    "logoLine1": "websites",
+    "logoLine2": "für praxen"
+  },
+  "metadata": {
+    "title": "Websites für Praxen — Professionelles Webdesign für Zahnärzte",
+    "titleTemplate": "%s | Websites für Praxen",
+    "description": "Wir gestalten moderne, schnelle und für Google optimierte Websites. Mehr Patienten, mehr Termine für Ihre Zahnarztpraxis."
+  }
+}

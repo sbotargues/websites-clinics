@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Nav link underline hover ── */
+.nav-link {
+  position: relative;
+  padding: 0.25rem 0.125rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #57534E;
+  border-radius: 1px;
+  transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem; /* match header height */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  background-color: #FAFAF9;
+  color: #1C1917;
+}
+
+/* Shimmer / shine effect */
+.shimmer {
+  background: linear-gradient(
+    120deg,
+    currentColor 0%,
+    currentColor 46%,
+    #8b5cf6 49.8%,
+    #a78bfa 50%,
+    #8b5cf6 50.2%,
+    currentColor 54%,
+    currentColor 100%
+  );
+  background-size: 500% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 7s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 100% center; }
+  50% { background-position: 0% center; }
+}
+
+/* Keep hero visible on first paint; only hide scroll-animated sections. */
+[data-demo-section] [data-demo-title],
+[data-demo-section] [data-demo-subtitle],
+[data-demo-section] [data-demo-item],
+[data-demo-form],
+[data-demo-booking] {
+  opacity: 0;
+}
+
+/* ── Sticky hero parallax ── */
+.hero-container {
+  position: relative;
+}
+
+.hero-sticky {
+  position: sticky;
+  top: 4rem; /* header height */
+  height: calc(100svh - 4rem);
+  overflow: hidden;
+}
+
+/* Every sibling after the sticky hero scrolls over it */
+.hero-container > :not(.hero-sticky) {
+  position: relative;
+}
+
+.hero-overlay {
+  background: #fafaf9;
+  box-shadow: 0 -8px 30px rgba(28, 25, 23, 0.06);
+}
+
+/* ── Reusable section parallax (Demos, Features) ── */
+.section-parallax {
+  position: relative;
+}
+
+.section-parallax-sticky {
+  position: sticky;
+  top: 4rem;
+  height: calc(100svh - 4rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F5F5F4;
+}
+
+/* Demos section: disable sticky parallax on mobile (cards too tall) */
+@media (max-width: 767px) {
+  .section-parallax-sticky--fluid {
+    position: relative;
+    top: 0;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.section-parallax > :not(.section-parallax-sticky) {
+  position: relative;
+  z-index: 1;
+}
+
+.section-parallax-overlay {
+  background: #fafaf9;
+  box-shadow: 0 -8px 30px rgba(28, 25, 23, 0.06);
+}
+
+/* ── Reverse parallax for CTA (mirror of hero) ── */
+.cta-container {
+  position: relative;
+}
+
+.cta-overlay {
+  position: relative;
+  z-index: 2;
+  background: #fafaf9;
+  box-shadow: 0 8px 30px rgba(28, 25, 23, 0.06);
+}
+
+.cta-sticky {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  min-height: calc(100svh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F4;
+}

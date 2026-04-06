@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Exemples",
+    "features": "Avantatges",
+    "faq": "Dubtes",
+    "contact": "Contacte",
+    "reserve": "Reservar",
+    "ariaOpen": "Obrir menú",
+    "ariaClose": "Tancar menú",
+    "whatsappMessage": "Hola, vull informació sobre webs per a clíniques dentals"
+  },
+  "hero": {
+    "badge": "Disseny Web per a Clíniques Dentals",
+    "titlePre": "La teva",
+    "titleHighlight": "clínica",
+    "titlePost": "mereix un web que porti pacients",
+    "subtitle": "Webs modernes, ràpides i optimitzades per a SEO. Més visibilitat a Google, més trucades, més cites.",
+    "cta": "Veure Exemples",
+    "ctaSecondary": "Contacta'ns",
+    "floatingCards": [
+      "Més pacients",
+      "Oberta 24/7",
+      "Càrrega instantània",
+      "Visible a la IA",
+      "Cites en línia",
+      "Nº1 a Google"
+    ]
+  },
+  "demos": {
+    "title": "3 tipus de web per a la teva clínica",
+    "subtitle": "Tria la que millor encaixi. Totes són personalitzades, es veuen perfectes al mòbil i et posicionen a Google.",
+    "items": [
+      {
+        "title": "Pàgina única",
+        "desc": "Tot en una sola pàgina: els teus serveis, on ets, horaris i un formulari de contacte. Ràpida, directa i llesta per atraure pacients.",
+        "link": "Veure demo"
+      },
+      {
+        "title": "Diverses pàgines",
+        "desc": "Una pàgina per a cada cosa: serveis, equip, opinions de pacients, galeria de fotos i blog. Per a clíniques que volen transmetre confiança.",
+        "link": "Veure demo"
+      },
+      {
+        "title": "Web amb cites en línia",
+        "desc": "Tot l'anterior més un sistema perquè els teus pacients reservin cita des del mòbil, a qualsevol hora, sense trucar.",
+        "link": "Veure demo"
+      }
+    ]
+  },
+  "features": {
+    "title": "Què aconsegueixes amb el teu nou web?",
+    "subtitle": "Menys temps perseguint pacients. Més temps fent el que saps fer.",
+    "items": [
+      {
+        "title": "Que et trobin a Google",
+        "desc": "Quan algú busca 'dentista a prop meu', la teva clínica apareix. Així de simple. Sense pagar anuncis, sense complicacions."
+      },
+      {
+        "title": "Més trucades, més cites",
+        "desc": "Botó de trucar sempre visible, formulari fàcil i WhatsApp directe. El pacient et contacta en 2 tocs des del mòbil."
+      },
+      {
+        "title": "Cites en línia les 24h",
+        "desc": "Els teus pacients reserven cita a les 11 de la nit, un diumenge, des del sofà. Tu només veus l'agenda plena en arribar."
+      },
+      {
+        "title": "Una imatge que imposa",
+        "desc": "Els pacients decideixen en 3 segons si confien en la teva clínica. Un web professional i cuidat fa que vulguin demanar cita."
+      },
+      {
+        "title": "Llest en una setmana",
+        "desc": "Res de mesos esperant. Ens expliques què necessites, nosaltres ens encarreguem de tot i en 7 dies el teu web està en línia."
+      },
+      {
+        "title": "Tu no toques res tècnic",
+        "desc": "Ni hosting, ni dominis, ni actualitzacions. Ens encarreguem de tot. Vols canviar alguna cosa? Ens escrius per WhatsApp."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vols un web que porti pacients?",
+    "subtitle": "Reserva una trucada de 15 minuts o escriu-nos per WhatsApp. T'enviem proposta en 24h.",
+    "button": "Demanar Proposta Gratis",
+    "whatsapp": "Escriu-nos per WhatsApp",
+    "formLabel": "o envia'ns un email",
+    "email": "El teu email",
+    "message": "Missatge",
+    "send": "Enviar"
+  },
+  "faq": {
+    "title": "Preguntes freqüents",
+    "subtitle": "Tot el que necessites saber abans de fer el pas.",
+    "items": [
+      {
+        "question": "Què és el SEO i per què el necessita la meva clínica?",
+        "answer": "SEO (Search Engine Optimization) és el conjunt de tècniques perquè el teu web aparegui als primers resultats de Google. Per a una clínica dental, això vol dir que quan algú busqui 'dentista al teu barri', et trobi a tu i no a la competència."
+      },
+      {
+        "question": "Què és el GEO i en què es diferencia del SEO?",
+        "answer": "GEO (Generative Engine Optimization) és l'optimització per als nous cercadors amb intel·ligència artificial com Google AI Overview, ChatGPT o Perplexity. El GEO fa que la IA recomani la teva clínica."
+      },
+      {
+        "question": "Què és Google Business Profile?",
+        "answer": "És la fitxa gratuïta de Google que apareix a Maps i als resultats locals. És el primer que veu un pacient: la teva adreça, horari, fotos, ressenyes i telèfon."
+      },
+      {
+        "question": "Què són els Core Web Vitals?",
+        "answer": "Són les mètriques que Google utilitza per mesurar l'experiència del teu web: velocitat de càrrega, estabilitat visual i temps de resposta. Els nostres webs tenen tots els indicadors en verd."
+      },
+      {
+        "question": "Què és el disseny mobile-first?",
+        "answer": "Vol dir que dissenyem el teu web pensant primer en el mòbil i després l'adaptem a pantalles més grans. El 72% dels pacients busquen dentista des del telèfon."
+      },
+      {
+        "question": "Necessito donar contingut o fotos?",
+        "answer": "Ens adaptem. Si tens fotos professionals, les fem servir. Si no, treballem amb bancs d'imatge d'alta qualitat. El contingut el redactem nosaltres."
+      },
+      {
+        "question": "Puc actualitzar el web jo mateix?",
+        "answer": "Sí. Et donem accés a un panell on pots canviar textos, fotos i horaris sense tocar codi. Per a canvis més grans, som a un WhatsApp de distància."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Tots els drets reservats.",
+    "privacy": "Privacitat",
+    "terms": "Termes",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Reservar cita",
+    "contactAria": "Formulari de contacte",
+    "toggleOpen": "Contactar",
+    "toggleClose": "Tancar"
+  },
+  "brand": {
+    "logoLine1": "webs",
+    "logoLine2": "per a clíniques"
+  },
+  "metadata": {
+    "title": "Webs per a Clíniques — Disseny web professional per a dentistes",
+    "titleTemplate": "%s | Webs per a Clíniques",
+    "description": "Dissenyem webs modernes, ràpides i optimitzades per a Google. Més pacients, més cites per a la teva clínica dental."
+  }
+}

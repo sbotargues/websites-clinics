@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Exemples",
+    "features": "Avantages",
+    "faq": "Questions",
+    "contact": "Contact",
+    "reserve": "Réserver",
+    "ariaOpen": "Ouvrir le menu",
+    "ariaClose": "Fermer le menu",
+    "whatsappMessage": "Bonjour, je souhaite des infos sur les sites web pour cliniques dentaires"
+  },
+  "hero": {
+    "badge": "Design Web pour Cliniques Dentaires",
+    "titlePre": "Votre",
+    "titleHighlight": "clinique",
+    "titlePost": "mérite un site qui attire des patients",
+    "subtitle": "Sites modernes, rapides et optimisés pour le SEO. Plus de visibilité sur Google, plus d'appels, plus de rendez-vous.",
+    "cta": "Voir les Exemples",
+    "ctaSecondary": "Contactez-nous",
+    "floatingCards": [
+      "Plus de patients",
+      "Ouverte 24/7",
+      "Chargement instantané",
+      "Visible par l'IA",
+      "Rendez-vous en ligne",
+      "Nº1 sur Google"
+    ]
+  },
+  "demos": {
+    "title": "3 types de site pour votre clinique",
+    "subtitle": "Choisissez celui qui vous convient. Tous sont personnalisés, parfaits sur mobile et vous positionnent sur Google.",
+    "items": [
+      {
+        "title": "Page unique",
+        "desc": "Tout sur une seule page : vos services, localisation, horaires et un formulaire de contact. Rapide, simple et prêt à attirer des patients.",
+        "link": "Voir la démo"
+      },
+      {
+        "title": "Plusieurs pages",
+        "desc": "Une page dédiée pour chaque chose : services, équipe, avis patients, galerie photos et blog. Pour les cliniques qui veulent inspirer confiance.",
+        "link": "Voir la démo"
+      },
+      {
+        "title": "Site avec réservation en ligne",
+        "desc": "Tout ce qui précède plus un système pour que vos patients prennent rendez-vous depuis leur téléphone, à toute heure, sans appeler.",
+        "link": "Voir la démo"
+      }
+    ]
+  },
+  "features": {
+    "title": "Qu'obtenez-vous avec votre nouveau site ?",
+    "subtitle": "Moins de temps à chercher des patients. Plus de temps pour faire ce que vous savez faire.",
+    "items": [
+      {
+        "title": "Vos patients vous trouvent sur Google",
+        "desc": "Quand quelqu'un cherche 'dentiste près de chez moi', votre clinique apparaît. C'est aussi simple. Sans payer de publicités, sans complications. Vous répondez simplement au téléphone."
+      },
+      {
+        "title": "Plus d'appels, plus de rendez-vous",
+        "desc": "Bouton d'appel toujours visible, formulaire facile et WhatsApp direct. Les patients vous contactent en 2 clics depuis leur téléphone."
+      },
+      {
+        "title": "Réservation en ligne 24h/24",
+        "desc": "Vos patients prennent rendez-vous à 23h un dimanche depuis leur canapé. Personne n'a besoin de décrocher. Vous voyez juste un agenda plein en arrivant."
+      },
+      {
+        "title": "Une image qui impressionne",
+        "desc": "Les patients décident en 3 secondes s'ils font confiance à votre clinique. Un site professionnel et soigné leur donne envie de prendre rendez-vous."
+      },
+      {
+        "title": "Prêt en une semaine",
+        "desc": "Pas d'attente de mois. Dites-nous ce dont vous avez besoin, nous nous occupons de tout et en 7 jours votre site est en ligne."
+      },
+      {
+        "title": "Vous ne touchez à rien de technique",
+        "desc": "Ni hébergement, ni domaines, ni mises à jour. On s'occupe de tout. Vous voulez changer quelque chose ? Envoyez-nous un WhatsApp."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vous voulez un site qui attire des patients ?",
+    "subtitle": "Réservez un appel de 15 minutes ou écrivez-nous sur WhatsApp. Nous vous envoyons une proposition en 24h.",
+    "button": "Demander une Proposition Gratuite",
+    "whatsapp": "Écrivez-nous sur WhatsApp",
+    "formLabel": "ou envoyez-nous un email",
+    "email": "Votre email",
+    "message": "Message",
+    "send": "Envoyer"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir avant de passer à l'action.",
+    "items": [
+      {
+        "question": "Qu'est-ce que le SEO et pourquoi ma clinique en a besoin ?",
+        "answer": "Le SEO (Search Engine Optimization) est l'ensemble des techniques pour que votre site apparaisse dans les premiers résultats de Google. Pour une clinique dentaire, cela signifie que quand quelqu'un cherche 'dentiste dans votre quartier', il vous trouve vous et pas la concurrence."
+      },
+      {
+        "question": "Qu'est-ce que le GEO et en quoi diffère-t-il du SEO ?",
+        "answer": "Le GEO (Generative Engine Optimization) est l'optimisation pour les nouveaux moteurs de recherche basés sur l'IA comme Google AI Overview, ChatGPT ou Perplexity. Le GEO fait en sorte que l'IA recommande votre clinique."
+      },
+      {
+        "question": "Qu'est-ce que Google Business Profile ?",
+        "answer": "C'est la fiche gratuite de Google qui apparaît dans Maps et les résultats locaux. C'est la première chose qu'un patient voit : votre adresse, horaires, photos, avis et téléphone."
+      },
+      {
+        "question": "Que sont les Core Web Vitals ?",
+        "answer": "Ce sont les métriques que Google utilise pour mesurer l'expérience de votre site : vitesse de chargement, stabilité visuelle et temps de réponse. Nos sites ont tous les indicateurs au vert."
+      },
+      {
+        "question": "Qu'est-ce que le design mobile-first ?",
+        "answer": "Cela signifie que nous concevons votre site en pensant d'abord au mobile puis l'adaptons aux écrans plus grands. 72% des patients cherchent un dentiste depuis leur téléphone."
+      },
+      {
+        "question": "Dois-je fournir du contenu ou des photos ?",
+        "answer": "Nous nous adaptons. Si vous avez des photos professionnelles, nous les utilisons. Sinon, nous travaillons avec des banques d'images de haute qualité. Nous rédigeons le contenu."
+      },
+      {
+        "question": "Puis-je mettre à jour le site moi-même ?",
+        "answer": "Oui. Nous vous donnons accès à un panneau où vous pouvez modifier textes, photos et horaires sans toucher au code. Pour les changements plus importants, nous sommes à un WhatsApp."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Prendre rendez-vous",
+    "contactAria": "Formulaire de contact",
+    "toggleOpen": "Nous contacter",
+    "toggleClose": "Fermer"
+  },
+  "brand": {
+    "logoLine1": "sites web",
+    "logoLine2": "pour cliniques"
+  },
+  "metadata": {
+    "title": "Sites Web pour Cliniques — Design web professionnel pour dentistes",
+    "titleTemplate": "%s | Sites Web pour Cliniques",
+    "description": "Nous créons des sites modernes, rapides et optimisés pour Google. Plus de patients, plus de rendez-vous pour votre clinique dentaire."
+  }
+}

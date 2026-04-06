@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Examples",
+    "features": "Benefits",
+    "faq": "Questions",
+    "contact": "Contact",
+    "reserve": "Book",
+    "ariaOpen": "Open menu",
+    "ariaClose": "Close menu",
+    "whatsappMessage": "Hi, I'd like info about websites for dental clinics"
+  },
+  "hero": {
+    "badge": "Web Design for Dental Clinics",
+    "titlePre": "Your",
+    "titleHighlight": "clinic",
+    "titlePost": "deserves a website that brings patients",
+    "subtitle": "Modern, fast, SEO-optimized websites. More Google visibility, more calls, more appointments.",
+    "cta": "See Examples",
+    "ctaSecondary": "Contact Us",
+    "floatingCards": [
+      "More patients",
+      "Open 24/7",
+      "Lightning fast",
+      "Visible to AI",
+      "Online booking",
+      "#1 on Google"
+    ]
+  },
+  "demos": {
+    "title": "3 types of website for your clinic",
+    "subtitle": "Pick the one that fits. All are custom-made, look perfect on mobile and rank you on Google.",
+    "items": [
+      {
+        "title": "Single page",
+        "desc": "Everything on one page: your services, location, opening hours and a contact form. Fast, simple and ready to attract patients.",
+        "link": "View demo"
+      },
+      {
+        "title": "Multiple pages",
+        "desc": "A dedicated page for each thing: services, team, patient reviews, photo gallery and blog. For clinics that want to build trust.",
+        "link": "View demo"
+      },
+      {
+        "title": "Website with online booking",
+        "desc": "Everything above plus a system so your patients can book appointments from their phone, anytime, without calling.",
+        "link": "View demo"
+      }
+    ]
+  },
+  "features": {
+    "title": "What do you get with your new website?",
+    "subtitle": "Less time chasing patients. More time doing what you do best.",
+    "items": [
+      {
+        "title": "Patients find you on Google",
+        "desc": "When someone searches 'dentist near me,' your clinic shows up. That simple. No paying for ads, no complications. You just answer the phone."
+      },
+      {
+        "title": "More calls, more appointments",
+        "desc": "Call button always visible, easy form, and direct WhatsApp. Patients contact you in 2 taps from their phone — no need to look up your number."
+      },
+      {
+        "title": "Online booking 24/7",
+        "desc": "Your patients book appointments at 11pm on a Sunday from their couch. No one needs to pick up the phone. You just see a full schedule when you arrive."
+      },
+      {
+        "title": "A look that impresses",
+        "desc": "Patients decide in 3 seconds if they trust your clinic. A professional, polished website makes them want to book before they even walk in."
+      },
+      {
+        "title": "Ready in one week",
+        "desc": "No waiting months. Tell us what you need, we handle everything, and in 7 days your website is live and working."
+      },
+      {
+        "title": "You don't touch anything technical",
+        "desc": "No hosting, no domains, no updates to worry about. We handle it all. Want to change something? Just message us on WhatsApp and we take care of it."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Want a website that brings patients?",
+    "subtitle": "Book a 15-minute call or message us on WhatsApp. We'll send a proposal within 24h.",
+    "button": "Get a Free Proposal",
+    "whatsapp": "Message us on WhatsApp",
+    "formLabel": "or send us an email",
+    "email": "Your email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before taking the next step.",
+    "items": [
+      {
+        "question": "What is SEO and why does my clinic need it?",
+        "answer": "SEO (Search Engine Optimization) is the set of techniques to get your website to appear in Google's top results. For a dental clinic, this means when someone searches 'dentist in your neighborhood,' they find you instead of the competition. Without SEO, your website is invisible."
+      },
+      {
+        "question": "What is GEO and how is it different from SEO?",
+        "answer": "GEO (Generative Engine Optimization) is optimization for new AI-powered search engines like Google AI Overview, ChatGPT, or Perplexity. While SEO ranks you in classic Google results, GEO makes AI recommend your clinic when a patient asks 'what's the best dentist near me?'."
+      },
+      {
+        "question": "What is Google Business Profile and what is it for?",
+        "answer": "It's Google's free listing that appears in Maps and local results. It's the first thing a patient sees: your address, hours, photos, reviews, and phone number. Having it properly optimized means more calls and more direct visits to your clinic."
+      },
+      {
+        "question": "What are Core Web Vitals?",
+        "answer": "They're the metrics Google uses to measure your website's experience: loading speed, visual stability, and response time. If your site is slow or shifts while loading, Google penalizes you and patients leave. Our websites have all indicators in green."
+      },
+      {
+        "question": "What is mobile-first design?",
+        "answer": "It means we design your website thinking about mobile first, then adapt it to larger screens. 72% of patients search for a dentist from their phone, so if your site doesn't look perfect on mobile, you're losing patients."
+      },
+      {
+        "question": "Do I need to provide content or photos?",
+        "answer": "We adapt. If you have professional photos of your clinic, we use them. If not, we work with high-quality stock imagery and can arrange a photo shoot as an add-on. We write the content based on a brief with you."
+      },
+      {
+        "question": "Can I update the website myself afterward?",
+        "answer": "Yes. We give you access to a panel where you can change text, photos, and hours without touching code. For bigger changes, we're just a WhatsApp away."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Book appointment",
+    "contactAria": "Contact form",
+    "toggleOpen": "Get in touch",
+    "toggleClose": "Close"
+  },
+  "brand": {
+    "logoLine1": "websites",
+    "logoLine2": "for clinics"
+  },
+  "metadata": {
+    "title": "Websites for Clinics — Professional web design for dentists",
+    "titleTemplate": "%s | Websites for Clinics",
+    "description": "We design modern, fast, Google-optimized websites. More patients, more appointments for your dental clinic."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "demos": "Voorbeelden",
+    "features": "Voordelen",
+    "faq": "Vragen",
+    "contact": "Contact",
+    "reserve": "Boeken",
+    "ariaOpen": "Menu openen",
+    "ariaClose": "Menu sluiten",
+    "whatsappMessage": "Hallo, ik wil graag info over websites voor tandartspraktijken"
+  },
+  "hero": {
+    "badge": "Webdesign voor Tandartspraktijken",
+    "titlePre": "Uw",
+    "titleHighlight": "praktijk",
+    "titlePost": "verdient een website die patiënten brengt",
+    "subtitle": "Moderne, snelle en SEO-geoptimaliseerde websites. Meer zichtbaarheid op Google, meer telefoontjes, meer afspraken.",
+    "cta": "Bekijk Voorbeelden",
+    "ctaSecondary": "Neem Contact Op",
+    "floatingCards": [
+      "Meer patiënten",
+      "24/7 open",
+      "Razendsnel",
+      "Zichtbaar voor AI",
+      "Online afspraken",
+      "Nr. 1 op Google"
+    ]
+  },
+  "demos": {
+    "title": "3 soorten websites voor uw praktijk",
+    "subtitle": "Kies wat het beste past. Allemaal op maat, perfect op mobiel en ze brengen u hoger in Google.",
+    "items": [
+      {
+        "title": "Enkele pagina",
+        "desc": "Alles op één pagina: uw diensten, locatie, openingstijden en een contactformulier. Snel, direct en klaar om patiënten aan te trekken.",
+        "link": "Bekijk demo"
+      },
+      {
+        "title": "Meerdere pagina's",
+        "desc": "Een eigen pagina per onderwerp: diensten, team, patiëntreviews, fotogalerij en blog. Voor praktijken die vertrouwen willen opbouwen.",
+        "link": "Bekijk demo"
+      },
+      {
+        "title": "Website met online boeken",
+        "desc": "Alles hierboven plus een systeem waarmee patiënten afspraken maken vanaf hun telefoon, op elk moment, zonder te bellen.",
+        "link": "Bekijk demo"
+      }
+    ]
+  },
+  "features": {
+    "title": "Wat krijgt u met uw nieuwe website?",
+    "subtitle": "Minder tijd besteden aan het zoeken naar patiënten. Meer tijd voor waar u goed in bent.",
+    "items": [
+      {
+        "title": "Patiënten vinden u op Google",
+        "desc": "Als iemand zoekt op 'tandarts bij mij in de buurt', verschijnt uw praktijk. Zo simpel. Zonder te betalen voor advertenties."
+      },
+      {
+        "title": "Meer telefoontjes, meer afspraken",
+        "desc": "Belknop altijd zichtbaar, eenvoudig formulier en direct WhatsApp. Patiënten bereiken u in 2 tikken."
+      },
+      {
+        "title": "Online boeken 24/7",
+        "desc": "Uw patiënten boeken om 23:00 op zondag vanuit de bank. Niemand hoeft op te nemen. U ziet gewoon een volle agenda als u aankomt."
+      },
+      {
+        "title": "Een uitstraling die indruk maakt",
+        "desc": "Patiënten beslissen in 3 seconden of ze uw praktijk vertrouwen. Een professionele website overtuigt hen om een afspraak te maken."
+      },
+      {
+        "title": "Klaar in één week",
+        "desc": "Geen maanden wachten. Vertel ons wat u nodig heeft, wij regelen alles en in 7 dagen is uw website live."
+      },
+      {
+        "title": "U hoeft niets technisch te doen",
+        "desc": "Geen hosting, geen domeinen, geen updates. Wij regelen alles. Wilt u iets veranderen? Stuur ons een WhatsApp."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Wilt u een website die patiënten brengt?",
+    "subtitle": "Boek een gesprek van 15 minuten of stuur ons een WhatsApp. We sturen u een voorstel binnen 24 uur.",
+    "button": "Gratis Voorstel Aanvragen",
+    "whatsapp": "Stuur ons een WhatsApp",
+    "formLabel": "of stuur ons een e-mail",
+    "email": "Uw e-mail",
+    "message": "Bericht",
+    "send": "Versturen"
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles wat u moet weten voordat u de volgende stap zet.",
+    "items": [
+      {
+        "question": "Wat is SEO en waarom heeft mijn praktijk het nodig?",
+        "answer": "SEO (Search Engine Optimization) zijn de technieken om uw website in de eerste Google-resultaten te laten verschijnen. Voor een tandartspraktijk betekent dit: als iemand zoekt op 'tandarts in uw buurt', vindt hij u en niet de concurrent."
+      },
+      {
+        "question": "Wat is GEO en hoe verschilt het van SEO?",
+        "answer": "GEO (Generative Engine Optimization) is optimalisatie voor nieuwe AI-zoekmachines zoals Google AI Overview, ChatGPT of Perplexity. GEO zorgt ervoor dat AI uw praktijk aanbeveelt."
+      },
+      {
+        "question": "Wat is Google Business Profile?",
+        "answer": "Het is de gratis Google-vermelding die verschijnt in Maps en lokale resultaten. Het eerste wat een patiënt ziet: uw adres, openingstijden, foto's, reviews en telefoonnummer."
+      },
+      {
+        "question": "Wat zijn Core Web Vitals?",
+        "answer": "Dit zijn de metrics die Google gebruikt om de gebruikerservaring te meten: laadsnelheid, visuele stabiliteit en reactietijd. Onze websites scoren op alle punten groen."
+      },
+      {
+        "question": "Wat is mobile-first design?",
+        "answer": "Het betekent dat we uw website eerst ontwerpen voor mobiel en daarna aanpassen voor grotere schermen. 72% van de patiënten zoekt een tandarts via hun telefoon."
+      },
+      {
+        "question": "Moet ik content of foto's aanleveren?",
+        "answer": "We passen ons aan. Als u professionele foto's heeft, gebruiken we die. Zo niet, werken we met hoogwaardige stockfoto's. De content schrijven wij."
+      },
+      {
+        "question": "Kan ik de website zelf bijwerken?",
+        "answer": "Ja. U krijgt toegang tot een panel waar u teksten, foto's en openingstijden kunt aanpassen zonder code. Voor grotere wijzigingen zijn we een WhatsApp-bericht verwijderd."
+      }
+    ]
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "cookies": "Cookies"
+  },
+  "floatingButtons": {
+    "whatsappAria": "WhatsApp",
+    "reserveAria": "Afspraak boeken",
+    "contactAria": "Contactformulier",
+    "toggleOpen": "Contact",
+    "toggleClose": "Sluiten"
+  },
+  "brand": {
+    "logoLine1": "websites",
+    "logoLine2": "voor klinieken"
+  },
+  "metadata": {
+    "title": "Websites voor Klinieken — Professioneel webdesign voor tandartsen",
+    "titleTemplate": "%s | Websites voor Klinieken",
+    "description": "Wij ontwerpen moderne, snelle en voor Google geoptimaliseerde websites. Meer patiënten, meer afspraken voor uw tandartspraktijk."
+  }
+}
