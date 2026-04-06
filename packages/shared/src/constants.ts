@@ -1,6 +1,6 @@
 import type { Plan } from "./types";
 
-export const APP_NAME = "Atelier Dental Web";
+export const APP_NAME = "Webs para Clínicas";
 
 export const PLANS: Plan[] = [
   {

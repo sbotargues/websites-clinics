@@ -44,7 +44,7 @@ export function PricingPage({ locale, locales, t }: PricingPageProps) {
       <main>
         <PricingSection t={t} locale={locale} />
       </main>
-      <Footer locale={locale} t={{ footer: t.footer }} />
+      <Footer locale={locale} t={{ brand: t.brand, footer: t.footer }} />
     </div>
   );
 }

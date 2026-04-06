@@ -21,7 +21,7 @@ export function DashboardShell({ children, locale, t }: DashboardShellProps) {
         claim: "Web experiences crafted to fill your agenda",
       }
     : {
-        name: "Atelier Dental",
+        name: "Webs para Clínicas",
         claim: "Webs de autor que convierten visitas en citas",
       };
 
