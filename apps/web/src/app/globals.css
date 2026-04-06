@@ -150,23 +150,31 @@ body {
   background: #F5F5F4;
 }
 
-/* Contact CTA: compact and non-sticky on mobile to avoid clipping. */
+/* Contact CTA: disable reverse parallax on mobile to avoid clashes with footer. */
 @media (max-width: 767px) {
+  .cta-container {
+    position: static;
+  }
+
+  .cta-overlay {
+    box-shadow: none;
+  }
+
   .cta-sticky {
-    position: sticky;
-    bottom: 0;
+    position: relative;
+    bottom: auto;
+    z-index: 2;
     min-height: auto;
-    height: auto;
-    max-height: calc(100svh - 4rem);
-    overflow-y: auto;
+    max-height: none;
+    overflow: visible;
     align-items: flex-start;
     justify-content: stretch;
   }
 }
 
-/* Subtle mobile reverse-parallax feel without hard clipping. */
+/* Subtle reverse-parallax effect only for non-mobile screens. */
 @supports (animation-timeline: view()) {
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
     .cta-sticky {
       animation: cta-lift-mobile linear both;
       animation-timeline: view();
