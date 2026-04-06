@@ -14,6 +14,8 @@
     "@scope/landing": "*",
     "@scope/shared": "*",
     "@scope/ui": "*",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "gsap": "^3.14.2",
     "next": "^15",
     "next-intl": "^4",
