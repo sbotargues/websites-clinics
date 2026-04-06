@@ -183,7 +183,7 @@ export function HeroSection({ t, locale }: HeroProps) {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden min-h-0 md:min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6">
+    <section ref={sectionRef} className="relative overflow-hidden min-h-0 md:min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-start pt-24 md:pt-0 md:justify-center px-4 sm:px-6">
       {/* Subtle glow — parallax */}
       <div data-parallax="0.15" className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -200,8 +200,8 @@ export function HeroSection({ t, locale }: HeroProps) {
         </div>
       ))}
 
-      {/* Mobile: top row of cards */}
-      <div className="flex lg:hidden flex-wrap justify-center gap-3 pt-10 pb-10">
+      {/* Mobile: top row of cards — hidden on mobile for space */}
+      <div className="hidden lg:hidden">
         {floatingCardsLayout.filter(c => c.row === "top").map((card, _i, arr) => {
           const i = floatingCardsLayout.indexOf(card);
           return (
@@ -235,8 +235,8 @@ export function HeroSection({ t, locale }: HeroProps) {
         </div>
       </div>
 
-      {/* Mobile: bottom row of cards */}
-      <div className="flex lg:hidden flex-wrap justify-center gap-3 pt-10 pb-10">
+      {/* Mobile: bottom row of cards — hidden on mobile for space */}
+      <div className="hidden lg:hidden">
         {floatingCardsLayout.filter(c => c.row === "bottom").map((card) => {
           const i = floatingCardsLayout.indexOf(card);
           return (
