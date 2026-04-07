@@ -6,7 +6,7 @@ import { localizedPath } from "./seo";
 
 const handleI18nRouting = createMiddleware(routing);
 
-const BOT_UA_RE = /(googlebot|bingbot|duckduckbot|baiduspider|yandex|slurp|crawler|spider)/i;
+const BOT_UA_RE = /(googlebot|bingbot|duckduckbot|baiduspider|yandex|slurp|crawler|spider|whatsapp|facebookexternalhit|telegrambot|twitterbot|linkedinbot|slackbot|discordbot|applebot|pinterestbot)/i;
 
 const countryToLocale: Partial<Record<string, Locale>> = {
   GE: "ka",
