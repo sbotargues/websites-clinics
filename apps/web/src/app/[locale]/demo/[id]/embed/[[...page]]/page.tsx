@@ -191,7 +191,7 @@ export default async function DemoEmbed({
     const sectionKey = pageSlug && layout.pageMap ? layout.pageMap[pageSlug] : null;
 
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white overflow-x-hidden">
         <DemoHeader
           theme={theme}
           content={content}
@@ -226,7 +226,7 @@ export default async function DemoEmbed({
 
   // ── Single-page demo (demo 1) ──
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <DemoHeader theme={theme} content={content} navItems={layout.navItems} locale={resolvedParams.locale} />
       <DemoAnimations>
         {layout.sections.map((section) => {
