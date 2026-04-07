@@ -40,6 +40,12 @@ export function DemoHeader({ theme, content, navItems, basePath, currentPage, lo
   const links = navItems ?? ["Servicios", "Equipo", "Contacto"];
   const isMultiPage = !!basePath;
 
+  /** Translate a Spanish nav label to the current locale */
+  function translateLabel(label: string) {
+    const slug = toSlug(label);
+    return i18n.nav[slug] ?? label;
+  }
+
   return (
     <>
       <header className={`sticky top-0 z-50 ${theme.headerBg}`}>
@@ -63,7 +69,7 @@ export function DemoHeader({ theme, content, navItems, basePath, currentPage, lo
                   href={href}
                   className={`${theme.navHover} transition-colors ${isActive ? "font-medium text-gray-900" : ""}`}
                 >
-                  {label}
+                  {translateLabel(label)}
                 </a>
               );
             })}
@@ -82,7 +88,7 @@ export function DemoHeader({ theme, content, navItems, basePath, currentPage, lo
           <button
             className="md:hidden relative z-[60] w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
             onClick={toggle}
-            aria-label={open ? "Cerrar menu" : "Abrir menu"}
+            aria-label={open ? i18n.header.closeMenu : i18n.header.openMenu}
           >
             <span
               className={`block h-[2px] w-6 bg-current rounded-full transition-all duration-300 ease-[cubic-bezier(0.77,0,0.18,1)] origin-center ${
@@ -116,7 +122,7 @@ export function DemoHeader({ theme, content, navItems, basePath, currentPage, lo
           <button
             className="w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
             onClick={close}
-            aria-label="Cerrar menu"
+            aria-label={i18n.header.closeMenu}
           >
             <span className="block h-[2px] w-6 bg-gray-900 rounded-full translate-y-[7px] rotate-45" />
             <span className="block h-[2px] w-6 bg-gray-900 rounded-full opacity-0" />
@@ -141,7 +147,7 @@ export function DemoHeader({ theme, content, navItems, basePath, currentPage, lo
                 style={{ transitionDelay: open ? `${100 + i * 50}ms` : "0ms" }}
               >
                 <span className="text-xs font-mono text-gray-400 tabular-nums">0{i + 1}</span>
-                <span className="text-3xl font-bold tracking-tight">{label}</span>
+                <span className="text-3xl font-bold tracking-tight">{translateLabel(label)}</span>
               </a>
             );
           })}

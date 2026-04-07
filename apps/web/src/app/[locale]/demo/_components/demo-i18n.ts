@@ -11,7 +11,10 @@ export interface DemoI18n {
   demoLabels: Record<string, string>;
   header: {
     requestAppointment: string;
+    openMenu: string;
+    closeMenu: string;
   };
+  nav: Record<string, string>;
   contact: {
     name: string;
     phone: string;
@@ -64,6 +67,17 @@ const es: DemoI18n = {
   },
   header: {
     requestAppointment: "Pedir Cita",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
+  },
+  nav: {
+    servicios: "Servicios",
+    equipo: "Equipo",
+    contacto: "Contacto",
+    opiniones: "Opiniones",
+    galeria: "Galería",
+    blog: "Blog",
+    reservas: "Reservas",
   },
   contact: {
     name: "Nombre",
@@ -115,7 +129,16 @@ const en: DemoI18n = {
     "2": "Multi-page",
     "3": "Online booking",
   },
-  header: { requestAppointment: "Book Appointment" },
+  header: { requestAppointment: "Book Appointment", openMenu: "Open menu", closeMenu: "Close menu" },
+  nav: {
+    servicios: "Services",
+    equipo: "Team",
+    contacto: "Contact",
+    opiniones: "Reviews",
+    galeria: "Gallery",
+    blog: "Blog",
+    reservas: "Booking",
+  },
   contact: {
     name: "Name",
     phone: "Phone",
@@ -151,7 +174,16 @@ const en: DemoI18n = {
 const fr: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Retour", viewingDemo: "Vous regardez la Demo", cta: "Je veux un site comme celui-ci" },
-  header: { requestAppointment: "Prendre rendez-vous" },
+  header: { requestAppointment: "Prendre rendez-vous", openMenu: "Ouvrir le menu", closeMenu: "Fermer le menu" },
+  nav: {
+    servicios: "Services",
+    equipo: "Équipe",
+    contacto: "Contact",
+    opiniones: "Avis",
+    galeria: "Galerie",
+    blog: "Blog",
+    reservas: "Réservation",
+  },
   contact: { ...en.contact, name: "Nom", phone: "Telephone", message: "Message", send: "Envoyer le message" },
   booking: {
     ...en.booking,
@@ -173,7 +205,16 @@ const fr: DemoI18n = {
 const de: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Zuruck", viewingDemo: "Sie sehen Demo", cta: "Ich mochte eine Website wie diese" },
-  header: { requestAppointment: "Termin buchen" },
+  header: { requestAppointment: "Termin buchen", openMenu: "Menü öffnen", closeMenu: "Menü schließen" },
+  nav: {
+    servicios: "Leistungen",
+    equipo: "Team",
+    contacto: "Kontakt",
+    opiniones: "Bewertungen",
+    galeria: "Galerie",
+    blog: "Blog",
+    reservas: "Buchung",
+  },
   contact: { ...en.contact, name: "Name", phone: "Telefon", message: "Nachricht", send: "Nachricht senden" },
   booking: {
     ...en.booking,
@@ -195,7 +236,16 @@ const de: DemoI18n = {
 const it: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Indietro", viewingDemo: "Stai guardando la Demo", cta: "Voglio un sito cosi" },
-  header: { requestAppointment: "Prenota visita" },
+  header: { requestAppointment: "Prenota visita", openMenu: "Apri menu", closeMenu: "Chiudi menu" },
+  nav: {
+    servicios: "Servizi",
+    equipo: "Team",
+    contacto: "Contatto",
+    opiniones: "Recensioni",
+    galeria: "Galleria",
+    blog: "Blog",
+    reservas: "Prenotazione",
+  },
   contact: { ...en.contact, name: "Nome", phone: "Telefono", message: "Messaggio", send: "Invia messaggio" },
   booking: {
     ...en.booking,
@@ -217,7 +267,16 @@ const it: DemoI18n = {
 const pt: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Voltar", viewingDemo: "Voce esta vendo a Demo", cta: "Quero um site assim" },
-  header: { requestAppointment: "Marcar consulta" },
+  header: { requestAppointment: "Marcar consulta", openMenu: "Abrir menu", closeMenu: "Fechar menu" },
+  nav: {
+    servicios: "Serviços",
+    equipo: "Equipa",
+    contacto: "Contacto",
+    opiniones: "Opiniões",
+    galeria: "Galeria",
+    blog: "Blog",
+    reservas: "Reserva",
+  },
   contact: { ...en.contact, name: "Nome", phone: "Telefone", message: "Mensagem", send: "Enviar mensagem" },
   booking: {
     ...en.booking,
@@ -239,7 +298,16 @@ const pt: DemoI18n = {
 const ca: DemoI18n = {
   ...es,
   toolbar: { ...es.toolbar, back: "Tornar", viewingDemo: "Estas veient la Demo", cta: "Vull una web aixi" },
-  header: { requestAppointment: "Demanar cita" },
+  header: { requestAppointment: "Demanar cita", openMenu: "Obrir menú", closeMenu: "Tancar menú" },
+  nav: {
+    servicios: "Serveis",
+    equipo: "Equip",
+    contacto: "Contacte",
+    opiniones: "Opinions",
+    galeria: "Galeria",
+    blog: "Blog",
+    reservas: "Reserves",
+  },
   contact: { ...es.contact, phone: "Telefon", send: "Enviar missatge" },
   booking: {
     ...es.booking,
@@ -255,7 +323,16 @@ const ca: DemoI18n = {
 const ru: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Nazad", viewingDemo: "Vy smotrite Demo", cta: "Khochu takoi sait" },
-  header: { requestAppointment: "Zapisatsya" },
+  header: { requestAppointment: "Zapisatsya", openMenu: "Otkryt menyu", closeMenu: "Zakryt menyu" },
+  nav: {
+    servicios: "Uslugi",
+    equipo: "Komanda",
+    contacto: "Kontakty",
+    opiniones: "Otzyvy",
+    galeria: "Galereya",
+    blog: "Blog",
+    reservas: "Zapis",
+  },
   contact: { ...en.contact, name: "Imya", phone: "Telefon", message: "Soobshchenie", send: "Otpravit" },
   booking: {
     ...en.booking,
@@ -277,7 +354,16 @@ const ru: DemoI18n = {
 const nl: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "Terug", viewingDemo: "Je bekijkt Demo", cta: "Ik wil een website zoals deze" },
-  header: { requestAppointment: "Afspraak maken" },
+  header: { requestAppointment: "Afspraak maken", openMenu: "Menu openen", closeMenu: "Menu sluiten" },
+  nav: {
+    servicios: "Diensten",
+    equipo: "Team",
+    contacto: "Contact",
+    opiniones: "Recensies",
+    galeria: "Galerij",
+    blog: "Blog",
+    reservas: "Boeken",
+  },
   contact: { ...en.contact, name: "Naam", phone: "Telefoon", message: "Bericht", send: "Bericht verzenden" },
   booking: {
     ...en.booking,
@@ -299,7 +385,16 @@ const nl: DemoI18n = {
 const ka: DemoI18n = {
   ...en,
   toolbar: { ...en.toolbar, back: "უკან", viewingDemo: "თქვენ უყურებთ დემოს", cta: "მსურს ასეთი საიტი" },
-  header: { requestAppointment: "ვიზიტის დაჯავშნა" },
+  header: { requestAppointment: "ვიზიტის დაჯავშნა", openMenu: "მენიუს გახსნა", closeMenu: "მენიუს დახურვა" },
+  nav: {
+    servicios: "სერვისები",
+    equipo: "გუნდი",
+    contacto: "კონტაქტი",
+    opiniones: "შეფასებები",
+    galeria: "გალერეა",
+    blog: "ბლოგი",
+    reservas: "დაჯავშნა",
+  },
   contact: {
     ...en.contact,
     name: "სახელი",
