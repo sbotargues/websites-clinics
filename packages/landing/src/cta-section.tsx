@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Button, Input } from "@scope/ui";
+import { Button, Input, Toast } from "@scope/ui";
 
 interface CTASectionProps {
   t: {
@@ -120,16 +120,18 @@ export function CTASection({ t, locale }: CTASectionProps) {
               required
             />
           </div>
-          {status === "success" && (
-            <p className="text-sm text-green-600 font-medium">{t.cta.success}</p>
-          )}
-          {status === "error" && (
-            <p className="text-sm text-red-600 font-medium">{t.cta.error}</p>
-          )}
           <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section" disabled={status === "sending"}>
             {status === "sending" ? t.cta.sending : t.cta.send}
           </Button>
         </form>
+
+        {(status === "success" || status === "error") && (
+          <Toast
+            message={status === "success" ? t.cta.success : t.cta.error}
+            type={status === "success" ? "success" : "error"}
+            onClose={() => setStatus("idle")}
+          />
+        )}
       </div>
     </section>
   );
