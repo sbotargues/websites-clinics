@@ -30,11 +30,16 @@ export function CTASection({ t, locale }: CTASectionProps) {
     e.preventDefault();
     setStatus("sending");
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formData = new FormData(form);
     try {
-      const res = await fetch("https://formsubmit.co/ajax/sbotargues@gmail.com", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: formData.get("email"),
+          message: formData.get("message"),
+          locale,
+        }),
       });
       if (res.ok) {
         setStatus("success");

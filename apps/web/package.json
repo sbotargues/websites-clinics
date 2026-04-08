@@ -20,7 +20,8 @@
     "next": "^15",
     "next-intl": "^4",
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "resend": "^6.10.0"
   },
   "devDependencies": {
     "@types/node": "^22",
