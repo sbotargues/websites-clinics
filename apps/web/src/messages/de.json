@@ -85,7 +85,11 @@
     "formLabel": "oder senden Sie uns eine E-Mail",
     "email": "Ihre E-Mail",
     "message": "Nachricht",
-    "send": "Senden"
+    "placeholder": "Erzählen Sie uns von Ihrer Praxis...",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht gesendet! Wir melden uns innerhalb von 24h.",
+    "error": "Fehler beim Senden. Bitte versuchen Sie es erneut."
   },
   "faq": {
     "title": "Häufig gestellte Fragen",

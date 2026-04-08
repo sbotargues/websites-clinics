@@ -85,7 +85,11 @@
     "formLabel": "or send us an email",
     "email": "Your email",
     "message": "Message",
-    "send": "Send"
+    "placeholder": "Tell us about your clinic...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent! We'll get back to you within 24h.",
+    "error": "Failed to send. Please try again."
   },
   "faq": {
     "title": "Frequently asked questions",

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Button, Input } from "@scope/ui";
 
 interface CTASectionProps {
@@ -10,13 +13,40 @@ interface CTASectionProps {
       formLabel: string;
       email: string;
       message: string;
+      placeholder: string;
       send: string;
+      sending: string;
+      success: string;
+      error: string;
     };
   };
   locale: string;
 }
 
 export function CTASection({ t, locale }: CTASectionProps) {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/sbotargues@gmail.com", {
+        method: "POST",
+        body: data,
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section className="w-full py-10 sm:py-24 px-4 sm:px-6">
       <div className="max-w-xl mx-auto text-center">
@@ -66,8 +96,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
 
         {/* Simple email form */}
         <form
-          action="https://formsubmit.co/sbotargues@gmail.com"
-          method="POST"
+          onSubmit={handleSubmit}
           className="space-y-2.5 sm:space-y-3 text-left"
         >
           <Input
@@ -87,12 +116,18 @@ export function CTASection({ t, locale }: CTASectionProps) {
               name="message"
               rows={3}
               className="w-full rounded-lg border border-border bg-white px-3 py-2 text-sm text-foreground placeholder:text-muted/60 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary resize-none"
-              placeholder="Cuéntanos sobre tu clínica..."
+              placeholder={t.cta.placeholder}
               required
             />
           </div>
-          <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section">
-            {t.cta.send}
+          {status === "success" && (
+            <p className="text-sm text-green-600 font-medium">{t.cta.success}</p>
+          )}
+          {status === "error" && (
+            <p className="text-sm text-red-600 font-medium">{t.cta.error}</p>
+          )}
+          <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section" disabled={status === "sending"}>
+            {status === "sending" ? t.cta.sending : t.cta.send}
           </Button>
         </form>
       </div>

@@ -85,7 +85,11 @@
     "formLabel": "o envia'ns un email",
     "email": "El teu email",
     "message": "Missatge",
-    "send": "Enviar"
+    "placeholder": "Explica'ns sobre la teva clínica...",
+    "send": "Enviar",
+    "sending": "Enviant...",
+    "success": "Missatge enviat! Et respondrem en menys de 24h.",
+    "error": "Error en enviar. Torna-ho a provar."
   },
   "faq": {
     "title": "Preguntes freqüents",

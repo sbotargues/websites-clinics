@@ -85,7 +85,11 @@
     "formLabel": "oppure inviaci un'email",
     "email": "La tua email",
     "message": "Messaggio",
-    "send": "Invia"
+    "placeholder": "Raccontaci della tua clinica...",
+    "send": "Invia",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato! Ti risponderemo entro 24h.",
+    "error": "Errore nell'invio. Riprova."
   },
   "faq": {
     "title": "Domande frequenti",

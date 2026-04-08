@@ -85,7 +85,11 @@
     "formLabel": "of stuur ons een e-mail",
     "email": "Uw e-mail",
     "message": "Bericht",
-    "send": "Versturen"
+    "placeholder": "Vertel ons over uw praktijk...",
+    "send": "Versturen",
+    "sending": "Verzenden...",
+    "success": "Bericht verzonden! We reageren binnen 24 uur.",
+    "error": "Fout bij het verzenden. Probeer het opnieuw."
   },
   "faq": {
     "title": "Veelgestelde vragen",

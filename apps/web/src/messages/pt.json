@@ -85,7 +85,11 @@
     "formLabel": "ou envie-nos um email",
     "email": "O seu email",
     "message": "Mensagem",
-    "send": "Enviar"
+    "placeholder": "Conte-nos sobre a sua clínica...",
+    "send": "Enviar",
+    "sending": "A enviar...",
+    "success": "Mensagem enviada! Respondemos em menos de 24h.",
+    "error": "Erro ao enviar. Tente novamente."
   },
   "faq": {
     "title": "Perguntas frequentes",
