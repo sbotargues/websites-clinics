@@ -10,23 +10,29 @@ interface ToastProps {
 }
 
 export function Toast({ message, type = "success", duration = 5000, onClose }: ToastProps) {
-  const [visible, setVisible] = useState(false);
-  const [exiting, setExiting] = useState(false);
+  const [phase, setPhase] = useState<"enter" | "visible" | "exit">("enter");
 
   useEffect(() => {
-    // Trigger enter animation
-    requestAnimationFrame(() => setVisible(true));
+    // Double rAF ensures the browser has painted the initial state before transitioning
+    const raf1 = requestAnimationFrame(() => {
+      const raf2 = requestAnimationFrame(() => setPhase("visible"));
+      return () => cancelAnimationFrame(raf2);
+    });
 
     const timer = setTimeout(() => {
-      handleClose();
+      setPhase("exit");
+      setTimeout(onClose, 350);
     }, duration);
 
-    return () => clearTimeout(timer);
-  }, [duration]);
+    return () => {
+      cancelAnimationFrame(raf1);
+      clearTimeout(timer);
+    };
+  }, [duration, onClose]);
 
   function handleClose() {
-    setExiting(true);
-    setTimeout(onClose, 300);
+    setPhase("exit");
+    setTimeout(onClose, 350);
   }
 
   const isSuccess = type === "success";
@@ -35,45 +41,42 @@ export function Toast({ message, type = "success", duration = 5000, onClose }: T
     <div
       role="alert"
       aria-live="assertive"
-      className={`fixed top-4 right-4 z-50 flex items-start gap-3 max-w-sm w-full rounded-xl px-4 py-3 shadow-lg border transition-all duration-300 ${
-        visible && !exiting
-          ? "translate-x-0 opacity-100"
-          : "translate-x-full opacity-0"
-      } ${
+      style={{
+        transform: phase === "visible" ? "translateX(0)" : "translateX(110%)",
+        opacity: phase === "visible" ? 1 : 0,
+        transition: "transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.35s ease",
+      }}
+      className={`fixed top-4 right-4 z-[9999] flex items-start gap-3 max-w-sm w-full rounded-xl px-4 py-3.5 shadow-2xl border-2 ${
         isSuccess
-          ? "bg-primary-light border-primary/20"
-          : "bg-red-50 border-red-200"
+          ? "bg-white border-primary shadow-primary/20"
+          : "bg-white border-red-400 shadow-red-200"
       }`}
     >
       {/* Icon */}
-      <div className={`mt-0.5 flex-shrink-0 ${isSuccess ? "text-primary" : "text-red-500"}`}>
+      <div className={`mt-0.5 flex-shrink-0 rounded-full p-1 ${isSuccess ? "bg-primary/10 text-primary" : "bg-red-50 text-red-500"}`}>
         {isSuccess ? (
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         ) : (
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
           </svg>
         )}
       </div>
 
       {/* Message */}
-      <p className={`text-sm font-medium flex-1 ${isSuccess ? "text-primary-dark" : "text-red-700"}`}>
+      <p className={`text-sm font-semibold flex-1 leading-snug ${isSuccess ? "text-foreground" : "text-red-700"}`}>
         {message}
       </p>
 
       {/* Close button */}
       <button
         onClick={handleClose}
-        className={`flex-shrink-0 mt-0.5 rounded-full p-0.5 transition-colors ${
-          isSuccess
-            ? "text-primary/50 hover:text-primary hover:bg-primary/10"
-            : "text-red-400 hover:text-red-600 hover:bg-red-100"
-        }`}
+        className="flex-shrink-0 mt-0.5 rounded-full p-1 text-muted hover:text-foreground hover:bg-muted-bg transition-colors"
         aria-label="Close"
       >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
