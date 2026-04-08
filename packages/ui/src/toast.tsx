@@ -46,7 +46,7 @@ export function Toast({ message, type = "success", duration = 5000, onClose }: T
         opacity: phase === "visible" ? 1 : 0,
         transition: "transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.35s ease",
       }}
-      className={`fixed top-20 right-4 z-[9999] flex items-start gap-3 max-w-sm w-full rounded-xl px-4 py-3.5 shadow-2xl border-2 ${
+      className={`fixed top-[calc(4rem+1rem)] right-4 z-[9999] flex items-start gap-3 max-w-sm w-full rounded-xl px-4 py-3.5 shadow-2xl border-2 ${
         isSuccess
           ? "bg-white border-primary shadow-primary/20"
           : "bg-white border-red-400 shadow-red-200"
