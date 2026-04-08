@@ -106,7 +106,11 @@ export default async function Page({
       formLabel: cta("formLabel"),
       email: cta("email"),
       message: cta("message"),
+      placeholder: cta("placeholder"),
       send: cta("send"),
+      sending: cta("sending"),
+      success: cta("success"),
+      error: cta("error"),
     },
     footer: {
       rights: footer("rights"),
