@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let _resend: Resend;
+function getResend() {
+  if (!_resend) _resend = new Resend(process.env.RESEND_API_KEY);
+  return _resend;
+}
 
 const autoReply: Record<string, { subject: string; body: string }> = {
   es: {
@@ -53,6 +57,8 @@ export async function POST(req: NextRequest) {
     if (!email || !message) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
+
+    const resend = getResend();
 
     // Notify you
     await resend.emails.send({
