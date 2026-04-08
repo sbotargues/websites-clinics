@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface ToastProps {
   message: string;
@@ -37,7 +38,7 @@ export function Toast({ message, type = "success", duration = 5000, onClose }: T
 
   const isSuccess = type === "success";
 
-  return (
+  const toast = (
     <div
       role="alert"
       aria-live="assertive"
@@ -82,4 +83,6 @@ export function Toast({ message, type = "success", duration = 5000, onClose }: T
       </button>
     </div>
   );
+
+  return createPortal(toast, document.body);
 }
