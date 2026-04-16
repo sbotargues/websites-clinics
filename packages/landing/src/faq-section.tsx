@@ -15,7 +15,7 @@ interface FAQSectionProps {
 
 export function FAQSection({ t }: FAQSectionProps) {
   return (
-    <section id="faq" className="py-16 sm:py-24 pb-20 sm:pb-28 px-4 sm:px-6 bg-muted-bg">
+    <section className="py-16 sm:py-24 pb-20 sm:pb-28 px-4 sm:px-6 bg-muted-bg">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">

@@ -4,6 +4,9 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Force metadata (including <title>) into the initial HTML response.
+  // This avoids false negatives in SEO tools that don't process streamed head updates.
+  htmlLimitedBots: /.*/,
   transpilePackages: [
     "@scope/config",
     "@scope/shared",

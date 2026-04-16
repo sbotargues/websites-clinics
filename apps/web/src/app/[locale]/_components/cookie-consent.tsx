@@ -102,7 +102,7 @@ export function CookieConsent({ locale, copy }: CookieConsentProps) {
 
       <dialog ref={dialogRef} className="w-[92vw] max-w-lg rounded-2xl border border-border p-0 backdrop:bg-black/35">
         <div className="p-5 sm:p-6">
-          <h3 className="text-xl font-heading font-bold text-foreground mb-2">{copy.dialogTitle}</h3>
+          <p className="text-xl font-heading font-bold text-foreground mb-2">{copy.dialogTitle}</p>
           <p className="text-sm text-muted mb-5">{copy.dialogDescription}</p>
 
           <div className="space-y-4">

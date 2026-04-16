@@ -22,6 +22,11 @@ interface HeroProps {
     };
   };
   locale: string;
+  heroVisual?: {
+    cityLabel: string;
+    cityImage: string;
+    dentistImage: string;
+  };
 }
 
 const floatingCardsLayout = [
@@ -33,7 +38,7 @@ const floatingCardsLayout = [
   { icon: "🏆", x: "right-[10%]", y: "top-[45%]", rotate: "6deg", delay: 0.3, row: "bottom" },
 ];
 
-export function HeroSection({ t, locale }: HeroProps) {
+export function HeroSection({ t, locale, heroVisual }: HeroProps) {
   const animRef = useScrollAnimation();
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -186,13 +191,42 @@ export function HeroSection({ t, locale }: HeroProps) {
     <section ref={sectionRef} className="relative overflow-hidden min-h-0 md:min-h-[calc(100vh-4rem)] flex flex-col lg:flex-row items-center justify-start pt-20 md:pt-0 md:justify-center px-4 sm:px-6">
       {/* Subtle glow — parallax */}
       <div data-parallax="0.15" className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      {heroVisual ? (
+        <>
+          <div className="absolute inset-0 -mx-4 sm:-mx-6 hidden overflow-hidden lg:block">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-[0.18]"
+              style={{ backgroundImage: `url(${heroVisual.cityImage})` }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/78" />
+            <div className="absolute inset-y-0 right-0 w-[42%] bg-gradient-to-l from-primary/6 to-transparent" />
+          </div>
+          <div className="absolute right-[7%] top-[16%] hidden w-[220px] rounded-[1.5rem] border border-white/80 bg-white/88 p-3 pb-4 shadow-[0_24px_60px_-30px_rgba(15,23,42,0.35)] backdrop-blur-sm lg:block">
+            <div className="overflow-hidden rounded-[1.1rem]">
+              <img
+                src={heroVisual.dentistImage}
+                alt={`Dentist portrait for ${heroVisual.cityLabel}`}
+                className="h-[160px] w-full object-cover"
+              />
+            </div>
+            <div className="pt-3">
+              <p className="text-[11px] font-heading font-semibold uppercase tracking-[0.18em] text-primary">
+                Local clinic feel
+              </p>
+              <p className="mt-1 text-sm font-medium text-foreground">
+                {heroVisual.cityLabel}
+              </p>
+            </div>
+          </div>
+        </>
+      ) : null}
 
       {/* Desktop: floating absolute cards */}
       {floatingCardsLayout.map((card, i) => (
         <div
           key={i}
           data-float-card
-          className={`absolute ${card.x} ${card.y} hidden lg:flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-border shadow-lg rounded-xl px-4 py-2.5 pointer-events-none opacity-0`}
+          className={`absolute ${card.x} ${card.y} hidden lg:flex items-center gap-2 bg-white/90 backdrop-blur-sm border border-border shadow-lg rounded-xl px-4 py-2.5 pointer-events-none opacity-0 ${heroVisual && (i === 1 || i === 5) ? "xl:hidden" : ""}`}
           style={{ rotate: card.rotate, transformStyle: "preserve-3d" }}
         >
           <span className="text-lg">{card.icon}</span>
@@ -218,9 +252,15 @@ export function HeroSection({ t, locale }: HeroProps) {
         })}
       </div>
 
-      <div ref={animRef} className="max-w-4xl mx-auto text-center relative z-10">
-        <h1 data-hero-title className="text-4xl sm:text-6xl font-heading font-bold text-foreground leading-[1.08] tracking-tight mb-8 text-balance">
-          {t.hero.titlePre} <span data-highlight className="text-primary inline-block cursor-default relative shimmer">{t.hero.titleHighlight}</span> {t.hero.titlePost}
+      <div ref={animRef} className={`mx-auto text-center relative z-10 ${heroVisual ? "max-w-xl lg:max-w-2xl overflow-visible" : "max-w-4xl"}`}>
+        <h1 data-hero-title className={`text-4xl sm:text-6xl font-heading font-bold text-foreground leading-[1.08] tracking-tight mb-8 ${heroVisual ? "text-left lg:text-center overflow-visible" : "text-balance"}`}>
+          {t.hero.titlePre}{" "}
+          <span data-highlight className="text-primary inline-block cursor-default relative shimmer">{t.hero.titleHighlight}</span>
+          {t.hero.titlePost
+            ? t.hero.titlePost.startsWith("-")
+              ? t.hero.titlePost
+              : ` ${t.hero.titlePost}`
+            : null}
         </h1>
         <p data-hero-subtitle className="text-lg text-muted leading-relaxed max-w-2xl mx-auto mb-12 opacity-0">
           {t.hero.subtitle}

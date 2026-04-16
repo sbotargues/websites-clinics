@@ -25,21 +25,21 @@ const bgColors = [
 
 export function DemosSection({ t }: DemosSectionProps) {
   return (
-    <section id="demos" data-demos-root className="py-16 sm:py-24 pb-24 sm:pb-32 px-4 sm:px-6 bg-muted-bg">
+    <section data-demos-root className="py-16 sm:py-24 pb-24 sm:pb-32 px-4 sm:px-6 bg-muted-bg">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 sm:mb-14">
-          <h2 data-animate="fade-up" className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
             {t.demos.title}
           </h2>
-          <p data-animate="fade-up" data-delay="0.1" className="text-muted text-lg max-w-xl mx-auto">
+          <p className="text-muted text-lg max-w-xl mx-auto">
             {t.demos.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
           {t.demos.items.map((item, i) => (
-            <div key={item.title} data-animate="fade-up" data-delay={String(i * 0.12)}>
-              <Card data-card className="overflow-hidden hover:shadow-md transition-shadow p-0 flex flex-col h-full relative">
+            <div key={item.title}>
+              <Card data-card data-animate="fade-up" data-delay={String(i * 0.12)} className="overflow-hidden hover:shadow-md transition-shadow p-0 flex flex-col h-full relative">
                 {/* Background illustration — line draw */}
                 <div className={`absolute right-3 bottom-3 w-36 h-36 ${bgColors[i]} pointer-events-none`}>
                   {i === 0 && <BgOnePage />}

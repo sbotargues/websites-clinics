@@ -73,20 +73,13 @@ const illustrations = [
 
 export function FeaturesSection({ t }: FeaturesSectionProps) {
   return (
-    <section id="features" data-features-root className="py-12 sm:py-16 pb-20 sm:pb-28">
+    <section data-features-root className="py-12 sm:py-16 pb-20 sm:pb-28">
       {/* Header */}
       <div className="text-center mb-10 px-4 sm:px-6" data-features-header>
-        <h2
-          data-animate="fade-up"
-          className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4"
-        >
+        <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
           {t.features.title}
         </h2>
-        <p
-          data-animate="fade-up"
-          data-delay="0.1"
-          className="text-muted text-lg max-w-xl mx-auto"
-        >
+        <p className="text-muted text-lg max-w-xl mx-auto">
           {t.features.subtitle}
         </p>
       </div>
@@ -102,9 +95,9 @@ export function FeaturesSection({ t }: FeaturesSectionProps) {
               <div className="text-primary">
                 {illustrations[i % illustrations.length]}
               </div>
-              <h3 className="text-base font-semibold text-foreground leading-tight">
+              <p className="text-base font-semibold text-foreground leading-tight">
                 {item.title}
-              </h3>
+              </p>
               <p className="text-sm text-muted leading-relaxed">
                 {item.desc}
               </p>

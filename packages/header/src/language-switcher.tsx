@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const LOCALE_LABELS: Record<string, string> = {
   es: "Español",
@@ -21,8 +22,26 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ locale, locales }: LanguageSwitcherProps) {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  const buildLocaleUrl = useCallback(
+    (newLocale: string): string => {
+      // pathname is like: /es/c/madrid or /en/c/barcelona
+      const segments = pathname.split("/").filter(Boolean);
+
+      if (segments.length === 0) {
+        return `/${newLocale}`;
+      }
+
+      // First segment is always the locale — replace it
+      segments[0] = newLocale;
+
+      return "/" + segments.join("/");
+    },
+    [pathname]
+  );
 
   const close = useCallback(() => setOpen(false), []);
 
@@ -87,7 +106,7 @@ export function LanguageSwitcher({ locale, locales }: LanguageSwitcherProps) {
           {locales.map((loc) => (
             <li key={loc} role="option" aria-selected={loc === locale} id={`lang-${loc}`}>
               <a
-                href={loc === "es" ? "/" : `/${loc}`}
+                href={buildLocaleUrl(loc)}
                 onClick={() => {
                   setLocaleCookie(loc);
                   close();

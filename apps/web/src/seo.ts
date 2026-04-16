@@ -14,9 +14,9 @@ function normalizePath(path: string) {
 
 export function localizedPath(locale: string, path = "/") {
   const normalizedPath = normalizePath(path);
-  const localePrefix = locale === defaultLocale ? "" : `/${locale}`;
+  const localePrefix = `/${locale}`;
   return normalizedPath === "/"
-    ? `${localePrefix || "/"}`
+    ? localePrefix
     : `${localePrefix}${normalizedPath}`;
 }
 
