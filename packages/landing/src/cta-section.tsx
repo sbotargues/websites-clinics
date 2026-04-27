@@ -39,6 +39,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
           email: formData.get("email"),
           message: formData.get("message"),
           locale,
+          website: formData.get("website"),
         }),
       });
       if (res.ok) {
@@ -104,6 +105,8 @@ export function CTASection({ t, locale }: CTASectionProps) {
           onSubmit={handleSubmit}
           className="space-y-2.5 sm:space-y-3 text-left"
         >
+          {/* Honeypot antispam — invisible para humanos */}
+          <input type="text" name="website" tabIndex={-1} autoComplete="off" style={{ position: "absolute", opacity: 0, pointerEvents: "none", height: 0, width: 0, border: 0, padding: 0 }} aria-hidden="true" />
           <Input
             id="email"
             name="email"

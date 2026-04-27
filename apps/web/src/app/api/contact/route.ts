@@ -52,7 +52,12 @@ const autoReply: Record<string, { subject: string; body: string }> = {
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, message, locale } = await req.json();
+    const { email, message, locale, website } = await req.json();
+
+    // Honeypot: si viene relleno es un bot
+    if (website) {
+      return NextResponse.json({ ok: true });
+    }
 
     if (!email || !message) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
