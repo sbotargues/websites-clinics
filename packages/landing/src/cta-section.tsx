@@ -68,7 +68,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
-            data-track="calendly_click" data-track-location="cta_section"
+            data-track="cta_click" data-track-cta="calendly" data-track-location="cta_section"
           >
             <Button size="lg" className="w-full sm:w-auto gap-2 rounded-full">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -82,7 +82,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
-            data-track="whatsapp_click" data-track-location="cta_section"
+            data-track="cta_click" data-track-cta="whatsapp" data-track-location="cta_section"
           >
             <Button variant="secondary" size="lg" className="w-full sm:w-auto gap-2 rounded-full">
               <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
@@ -128,7 +128,7 @@ export function CTASection({ t, locale }: CTASectionProps) {
               required
             />
           </div>
-          <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section" disabled={status === "sending"}>
+          <Button type="submit" size="lg" className="w-full rounded-full" data-track="form_submit" data-track-location="cta_section" data-track-also="cta_click" disabled={status === "sending"}>
             {status === "sending" ? t.cta.sending : t.cta.send}
           </Button>
         </form>

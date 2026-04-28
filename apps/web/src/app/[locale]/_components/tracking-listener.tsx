@@ -21,7 +21,7 @@ export function TrackingListener() {
       const event = el.dataset.track!;
       const params: Record<string, string> = {};
       for (const [key, val] of Object.entries(el.dataset)) {
-        if (key.startsWith("track") && key !== "track" && val) {
+        if (key.startsWith("track") && key !== "track" && key !== "trackAlso" && val) {
           // Convert "trackDemoId" → "demo_id"
           const paramKey = key
             .slice(5) // remove "track" prefix
@@ -34,6 +34,11 @@ export function TrackingListener() {
 
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event, ...params });
+
+      // Fire secondary conversion event if specified (e.g. data-track-also="cta_click")
+      if (el.dataset.trackAlso) {
+        window.dataLayer.push({ event: el.dataset.trackAlso, ...params });
+      }
     };
 
     document.addEventListener("click", handler);

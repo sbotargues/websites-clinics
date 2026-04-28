@@ -18,6 +18,7 @@ export function FloatingButtons({ t }: FloatingButtonsProps) {
       aria-label={t.floatingButtons.whatsappAria}
       data-track="whatsapp_click"
       data-track-location="floating"
+      data-track-also="cta_click"
       className="fixed bottom-5 right-5 z-[99] w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-transform duration-200"
     >
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
